@@ -1,0 +1,22 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+DirectoryIndex src/pages/index.php index.html
+
+RewriteRule app/css/(.*)$ src/css/$1 [NC]
+RewriteRule app/js/(.*)$ src/js/$1 [NC]
+RewriteRule app/fonts/(.*)$ src/fonts/$1 [NC]
+RewriteRule images/(.*)$ src/images/$1 [NC]
+
+RewriteRule php/(.*)$ src/php/$1 [NC]
+
+RewriteRule vendors/css/(.*)$ src/vendors/css/$1 [NC]
+RewriteRule vendors/js/(.*)$ src/vendors/js/$1 [NC]
+RewriteRule vendors/fonts/(.*)$ src/vendors/fonts/$1 [NC]
+
+RewriteRule index$ src/pages/index.php
+RewriteRule about$ src/pages/about.php
+RewriteRule contact$ src/pages/contact.php
+RewriteRule access$ src/pages/login.php
+RewriteRule dashboard/admin$ DashBoard/admin

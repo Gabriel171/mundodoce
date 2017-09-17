@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Mundo Doce</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Mundo Doce</a>
+            </div>
+            <!-- /.navbar-header -->
+
+            
+                    <!-- /.dropdown-tasks -->
+                </li>
+                <!-- /.dropdown -->
+              
+                            <!-- /input-group -->
+                        </li>
+                            <!-- /.nav-second-level -->
+                        </li>
+                                    </ul>
+                                    <!-- /.nav-third-level -->
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+
+        <div id="page-wrapper">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Cadastro Produtos</h1>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Cadastro Produtos
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                <form action="Envia_Produto.php" method="get">
+                                        <div class="form-group">
+                                            <label>Nome do Produto</label>
+                                             <input type="text" class="form-control" placeholder="Inserir o nome do produto" id="nomeproduto" name="nomeproduto" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Codigo do Produto</label>
+                                             <input type="text" class="form-control" placeholder="Inserir o código do produto" id="codigoproduto" name="codigoproduto" required>
+                                        </div>
+                                         <div class="form-group">
+                                            <label>Marca</label>
+                                             <input type="text" class="form-control" placeholder="Inserir marca" id="marca" name="marca" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Fornecedor</label>
+                                             <input type="text" class="form-control" placeholder="Inserir fornecedor" id="fornecedor" name="fornecedor" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Unidade</label>
+                                             <input type="text" class="form-control" placeholder="Inserir unidade" id="unidade" name="unidade" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Peso</label>
+                                             <input type="text" class="form-control" placeholder="Inserir peso" id="peso" name="peso" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Estoque Minimo</label>
+                                             <input type="text" class="form-control" placeholder="Inserir estoque mininmo" id="estoqueminimo" name="estoqueminimo" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Estoque Maximo</label>
+                                             <input type="text" class="form-control" placeholder="Inserir estoque maximo" id="estoquemaximo" name="estoquemaximo" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Código GTIN/EAN</label>
+                                             <input type="text" class="form-control" placeholder="Inserir codigo GTIN/EAN" id="codigogtin" name="codigogtin" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Valor de venda</label>
+                                             <input type="text" class="form-control" placeholder="Inserir valor de venda" id="valorvenda" name="valorvenda" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Valor de custo</label>
+                                             <input type="text" class="form-control" placeholder="Inserir valor de custo" id="valorcusto" name="valorcusto" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Origem do produto</label>
+                                             <input type="text" class="form-control" placeholder="Inserir origem do produto" id="origemproduto" name="origemproduto" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Situação</label>
+                                             <input type="text" class="form-control" placeholder="Inserir situação" id="situação" name="situação" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Estado</label>
+                                            <select class="form-control" id="estado" name="estado">
+                                                <option>Selecione</option>
+                                                <option value="AC">Acre</option>
+                                                <option value="AL">Alagoas</option>
+                                                <option value="AP">Amapá</option>
+                                                <option value="AM">Amazonas</option>
+                                                <option value="BA">Bahia</option>
+                                                <option value="CE">Ceará</option>
+                                                <option value="DF">Distrito Federal</option>
+                                                <option value="ES">Espirito Santo</option>
+                                                <option value="GO">Goiás</option>
+                                                <option value="MA">Maranhão</option>
+                                                <option value="MS">Mato Grosso do Sul</option>
+                                                <option value="MT">Mato Grosso</option>
+                                                <option value="MG">Minas Gerais</option>
+                                                <option value="PA">Pará</option>
+                                                <option value="PB">Paraíba</option>
+                                                <option value="PR">Paraná</option>
+                                                <option value="PE">Pernambuco</option>
+                                                <option value="PI">Piauí</option>
+                                                <option value="RJ">Rio de Janeiro</option>
+                                                <option value="RN">Rio Grande do Norte</option>
+                                                <option value="RS">Rio Grande do Sul</option>
+                                                <option value="RO">Rondônia</option>
+                                                <option value="RR">Roraima</option>
+                                                <option value="SC">Santa Catarina</option>
+                                                <option value="SP">São Paulo</option>
+                                                <option value="SE">Sergipe</option>
+                                                <option value="TO">Tocantins</option>
+                                            </select>
+                                        </div>
+                                        <button type="submit" class="btn btn-default">Submit Button</button>
+                                    </form>
+                                </div>
+                                
+
+                                 <!-- jQuery -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="../vendor/metisMenu/metisMenu.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="../dist/js/sb-admin-2.js"></script>
+
+</body>
+
+</html>
