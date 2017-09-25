@@ -1,75 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Mundo Doce</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- MetisMenu CSS -->
-    <link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-</head>
+<?php
+        $path = "/header.php";
+        include_once(dirname(__DIR__) . $path);
+    ?>
 
 <body>
-
-    <div id="wrapper">
-
-        <!-- Navigation -->
-        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html">Mundo Doce</a>
-            </div>
-            <!-- /.navbar-header -->
-
-            
-                    <!-- /.dropdown-tasks -->
-                </li>
-                <!-- /.dropdown -->
-              
-                            <!-- /input-group -->
-                        </li>
-                            <!-- /.nav-second-level -->
-                        </li>
-                                    </ul>
-                                    <!-- /.nav-third-level -->
-                                </li>
-                            </ul>
-                            <!-- /.nav-second-level -->
-                        </li>
-                    </ul>
-                </div>
-                <!-- /.sidebar-collapse -->
-            </div>
-            <!-- /.navbar-static-side -->
-        </nav>
+<?php
+        $path = "/menu.php";
+        include_once(dirname(__DIR__) . $path);
+    ?>
+   
 
         <div id="page-wrapper">
             <div class="row">
@@ -366,7 +307,7 @@
                                         </div>
                                         <div class="form-group">
                                             <label>E-mail</label>
-                                            <input type="text" class="form-control" placeholder="Insira o seu E-mail" id="email" name="email" required>
+                                            <input type="email" class="form-control" placeholder="nome@email.com" id="email" name="email" required>
                                         </div>
                                         <div class="form-group">
                                             <label> Numero do Banco </label>
@@ -384,14 +325,15 @@
                                             <label>Estado</label>
                                             <input type="text" class="form-control" placeholder="Insira o seu estado" id="estado" name="estado" maxlength="10" required>
                                         </div>
-                                        <input type="submit" value="Enviar">
+                                        <button type="submit" class="btn btn-default">Enviar</button>
                                     </form>
                                 </div>
-                                
+                                <?php
+        $path = "/script.php";
+        include_once(dirname(__DIR__) . $path);
+    ?>
 
-                                 <!-- jQuery -->
-    <script src="../vendor/jquery/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.js"></script>
+   
     <script>
         $(document).ready(function(){
             $("#cep").mask("00000-000");
@@ -409,15 +351,6 @@
             $("#agencia").mask("0000");
         });
     </script>
-    <!-- Bootstrap Core JavaScript -->
-    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Metis Menu Plugin JavaScript -->
-    <script src="../vendor/metisMenu/metisMenu.min.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script src="../dist/js/sb-admin-2.js"></script>
-
 </body>
 
 </html>

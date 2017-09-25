@@ -27,8 +27,8 @@
       <h1 class="title">Login</h1>
       <form id="loginForm">>
         <div class="input-container">
-          <input type="text" name="name" id="name" required/>
-          <label for="name">Usuário</label>
+          <input type="text" name="email" id="email" required/>
+          <label for="email">Email</label>
           <div class="bar"></div>
         </div>
         <div class="input-container">
@@ -59,12 +59,17 @@
       <form id="createUserForm">>
         <div class="input-container">
           <input type="text" name="name" id="name" required/>
-          <label for="name">Usuário</label>
+          <label for="name">Nome Completo</label>
+          <div class="bar"></div>
+        </div>
+        <div class="input-container">
+          <input type="text" name="email" id="email" required/>
+          <label for="email">Email</label>
           <div class="bar"></div>
         </div>
         <div class="input-container">
           <input type="password" name="password" id="password" required/>
-          <label for="#password">Senha</label>
+          <label for="password">Senha</label>
           <div class="bar"></div>
         </div>
         

@@ -6,8 +6,8 @@
 
     $user = json_decode($_POST['user']);
 
-    $statement = "SELECT * FROM login_tcc
-                     WHERE usuario = '$user->name'
+    $statement = "SELECT * FROM cadastrofuncionario
+                     WHERE email = '$user->email'
                      AND senha = MD5('$user->password')";
     //echo $statement;
     
@@ -17,8 +17,28 @@
 
     if ($consulta != null) {
         session_start();
-        $_SESSION['usuario'] = $consulta['usuario'];
-        // Precisa de um JSON válido para o retorno
+        $_SESSION['usuario'] = $consulta['nomecompleto'];
+
+        $statement = mysqli_prepare($dbconnection, "SELECT role FROM user_role WHERE user_id = ?");
+        
+        if (isset($statement)) {
+            $roles = [];
+
+            mysqli_stmt_bind_param($statement, "i", $consulta["id_funcionario"]);
+            mysqli_stmt_execute($statement);
+            
+            mysqli_stmt_bind_result($statement, $role);
+            
+            while (mysqli_stmt_fetch($statement)) {
+                array_push($roles, $role);
+            }
+
+            mysqli_stmt_close($statement);
+
+            $_SESSION['roles'] = $roles;
+        }
+        
+        // // Precisa de um JSON válido para o retorno
 	    echo json_encode($_SESSION['usuario']);
     } else {
         $arr = array('message' => 'User not found', 'status' => '403');

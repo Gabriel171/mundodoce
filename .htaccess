@@ -18,5 +18,8 @@ RewriteRule vendors/fonts/(.*)$ src/vendors/fonts/$1 [NC]
 RewriteRule index$ src/pages/index.php
 RewriteRule about$ src/pages/about.php
 RewriteRule contact$ src/pages/contact.php
+RewriteRule france$ src/pages/france.php
+RewriteRule italy$ src/pages/italy.php
+RewriteRule england$ src/pages/england.php
 RewriteRule access$ src/pages/login.php
 RewriteRule dashboard/admin$ DashBoard/admin

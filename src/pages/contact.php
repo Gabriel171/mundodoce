@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html class="no-js">
     <?php
-        $path = $_SERVER['DOCUMENT_ROOT'];
-        $path .= "/MundoDoceRemaster/src/templates/header.php";
-        include_once($path);
+        $path = "/templates/header.php";
+        include_once(dirname(__DIR__) . $path);
     ?>
     <body>
         <?php
-            $path = $_SERVER['DOCUMENT_ROOT'];
-            $path .= "/MundoDoceRemaster/src/templates/menu.php";
-            include_once($path);
+            $path = "/templates/menu.php";
+            include_once(dirname(__DIR__) . $path);
         ?>
 
         <!-- 
@@ -106,9 +104,8 @@
         </section>
 
         <?php
-            $path = $_SERVER['DOCUMENT_ROOT'];
-            $path .= "/MundoDoceRemaster/src/templates/footer.php";
-            include_once($path);
+            $path = "/templates/footer.php";
+            include_once(dirname(__DIR__) . $path);
         ?>
     </body>
 </html>

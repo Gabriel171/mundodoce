@@ -28,9 +28,9 @@ Header Section Start
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Países <span class="caret"></span></a>
                         <div class="dropdown-menu">
                             <ul>
-                                <li><a href="blog-fullwidth.html">França</a></li>
-                                <li><a href="blog-left-sidebar.html">Itália</a></li>
-                                <li><a href="blog-right-sidebar.html">Inglaterra</a></li>
+                                <li><a href="france">França</a></li>
+                                <li><a href="italy">Itália</a></li>
+                                <li><a href="england">Inglaterra</a></li>
                             </ul>
                         </div>
                     </li>
@@ -39,7 +39,15 @@ Header Section Start
                     <?php 
                         if (isset($_SESSION['usuario'])) {
                     ?>
-                        <li><a href="dashboard/admin">Dashboard</a></li>
+                        <?php 
+                            if (isset($_SESSION['roles']) && in_array("ADMIN", $_SESSION['roles'])) {
+
+                        ?>
+                            <li><a href="dashboard/admin">Dashboard</a></li>
+                        <?php
+                            }
+                        ?>
+
                         <li class="logout">
                             <a href="javascript:void(0);">Sair</a>
                         </li>

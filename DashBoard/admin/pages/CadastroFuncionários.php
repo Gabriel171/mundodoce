@@ -1,75 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php
+        $path = "/header.php";
+        include_once(dirname(__DIR__) . $path);
+    ?>
 
-<head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Mundo Doce</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- MetisMenu CSS -->
-    <link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-</head>
 
 <body>
-
-    <div id="wrapper">
-
-        <!-- Navigation -->
-        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html">Mundo Doce</a>
-            </div>
-            <!-- /.navbar-header -->
-
-            
-                    <!-- /.dropdown-tasks -->
-                </li>
-                <!-- /.dropdown -->
-              
-                            <!-- /input-group -->
-                        </li>
-                            <!-- /.nav-second-level -->
-                        </li>
-                                    </ul>
-                                    <!-- /.nav-third-level -->
-                                </li>
-                            </ul>
-                            <!-- /.nav-second-level -->
-                        </li>
-                    </ul>
-                </div>
-                <!-- /.sidebar-collapse -->
-            </div>
-            <!-- /.navbar-static-side -->
-        </nav>
+<?php
+        $path = "/menu.php";
+        include_once(dirname(__DIR__) . $path);
+    ?>
+    
 
         <div id="page-wrapper">
             <div class="row">
@@ -91,7 +33,7 @@
                                     <form action="Envia_Funcionario.php" method="get">
                                         <div class="form-group">
                                             <label>Nome Completo</label>
-                                            <input type="text" class="form-control" placeholder="Insira o seu nome" id="nomecompleto" name="nomecompleto" required>
+                                            <input type="text" class="form-control" placeholder="Insira o seu nome" id="nomecompleto" name="nomecompleto" >
                                         </div>
                                         <div class="form-group">
                                              <label>CPF</label> 
@@ -140,7 +82,7 @@
                                             </script>
                                          <div class="form-group">
                                             <label>RG</label>
-                                            <input type="text" class="form-control" placeholder="Insira o seu RG" id="rg" name="rg" required>
+                                            <input type="text" class="form-control" placeholder="Insira o seu RG" id="rg" name="rg" >
                                         </div>
                                         <div class="form-group">
                                             
@@ -215,67 +157,69 @@
                                             };
 
                                             </script>
+
                                             <label>CEP</label>
                                             <input class="form-control" placeholder="Insira o seu CEP " onblur="pesquisacep(this.value)" id="cep" name="cep" type="">
                                         </div>
                                         <div class="form-group">
                                             <label>Data de Nascimento</label>
-                                            <input type="text" class="form-control" placeholder="Insira a sua data de nascimento" id="data_nascimento" name="data_nascimento" required>
+                                            <input type="date" class="form-control" placeholder="Insira a sua data de nascimento" id="data_nascimento" name="data_nascimento" >
                                         </div>
                                         <div class="form-group">
                                             <label>Telefone Principal</label>
-                                            <input type="text" class="form-control" placeholder="Insira o seu telefone" id="telefone" name="telefone" required>
+                                            <input type="text" class="form-control" placeholder="Insira o seu telefone" id="telefone" name="telefone" >
                                         </div>
                                         <div class="form-group">
+                                            <label>E-mail</label>
+                                            <input type="email" class="form-control" placeholder="nome@email.com" id="email" name="email" >
+                                        </div> 
+                                        <div class="form-group">
+                                            <label>Senha</label>
+                                            <input type="password" class="form-control" placeholder="Insira sua senha" id="password" name="senha" >
+                                        </div> 
+                                        <div class="form-group">
                                             <label>Endereço</label>
-                                            <input type="text" class="form-control" placeholder="Insira o seu endereço" id="endereco" name="endereco" required>
+                                            <input type="text" class="form-control" placeholder="Insira o seu endereço" id="endereco" name="endereco" >
                                         </div>
                                         <div class="form-group">
                                             <label>Bairro </label>
-                                            <input type="text" class="form-control" placeholder="Insira o seu bairro" id="bairro" name="bairro" required>
+                                            <input type="text" class="form-control" placeholder="Insira o seu bairro" id="bairro" name="bairro" >
                                         </div>
                                         <div class="form-group">
                                             <label>Cidade</label>
-                                            <input type="text" class="form-control" placeholder="Insira a sua cidade" id="cidade" name="cidade" required>
+                                            <input type="text" class="form-control" placeholder="Insira a sua cidade" id="cidade" name="cidade" >
                                         </div>
                                         <div class="form-group">
                                             <label>Estado</label>
-                                            <input type="text" class="form-control" placeholder="Insira o seu estado" id="estado" name="estado" required>
+                                            <input type="text" class="form-control" placeholder="Insira o seu estado" id="estado" name="estado" >
                                         </div>
-                                        <button type="submit" class="btn btn-default">Submit Button</button>
+                                        <div class="form-group">
+                                            <input type="checkbox" id="isAdmin" name="isAdmin" value="ADMIN">
+                                            <label for="isAdmin">Admin?</label>
+                                        </div>
+                                        <button type="submit" class="btn btn-default">Enviar</button>
                                     </form>
                                 </div>
                                 
-
-                                 <!-- jQuery -->
-    <script src="../vendor/jquery/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.js"></script>
+                                <?php
+        $path = "/script.php";
+        include_once(dirname(__DIR__) . $path);
+    ?>
+   
     <script>
         $(document).ready(function(){
             $("#telefone").mask("(00)00000-0000");
         });
-        $(document).ready(function(){
-            $("#data_nascimento").mask("00/00/0000");
-        });
+        
         $(document).ready(function(){
             $("#cpf").mask("000.000.000-00");
         });
-        $(document).ready(function(){
-            $("#rg").mask("00.000.000-0");
-        });
+        
         $(document).ready(function(){
             $("#cep").mask("00000-000");
         });
     </script>
-    <!-- Bootstrap Core JavaScript -->
-    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Metis Menu Plugin JavaScript -->
-    <script src="../vendor/metisMenu/metisMenu.min.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script src="../dist/js/sb-admin-2.js"></script>
-
+  
 </body>
 
 </html>

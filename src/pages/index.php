@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html class="no-js">
     <?php
-        $path = $_SERVER['DOCUMENT_ROOT'];
-        $path .= "/MundoDoceRemaster/src/templates/header.php";
-        include($path);
+        $path = "/templates/header.php";
+        include(dirname(__DIR__) . $path);
     ?>
 <body>
     <?php
-        $path = $_SERVER['DOCUMENT_ROOT'];
-        $path .= "/MundoDoceRemaster/src/templates/menu.php";
-        include($path);
+        $path = "/templates/menu.php";
+        include(dirname(__DIR__) . $path);
     ?>
     <!--
     ==================================================
@@ -242,9 +240,8 @@
             </div>
         </section>
         <?php
-            $path = $_SERVER['DOCUMENT_ROOT'];
-            $path .= "/MundoDoceRemaster/src/templates/footer.php";
-            include_once($path);
+            $path = "/templates/footer.php";
+            include_once(dirname(__DIR__) . $path);
         ?>
     </body>
 </html>
