@@ -15,7 +15,9 @@ form.list = function() {
                 form.products = data;
 
                 for (var i = 0; i < data.length; i++) {
-                    form.$grid.append(form.getProductTemplate(data[i], i));
+                    form.$grid.append(
+                        form.getProductTemplate(data[i], i)
+                    );
                 }
             }
         },

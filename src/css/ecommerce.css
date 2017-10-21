@@ -1,7 +1,7 @@
-.container.ecommerce, .ecommerce--grid {
+.container.ecommerce, .ecommerce--grid, .container.cart, .cart--grid {
     margin-top: 50px;
 }
 
-.ecommerce--grid--product {
+.ecommerce--grid--product, .cart--grid--row {
     margin-bottom: 25px;
 }

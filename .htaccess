@@ -25,3 +25,4 @@ RewriteRule access$ src/pages/login.php
 RewriteRule admin$ src/pages/admin.php
 
 RewriteRule ecommerce$ src/pages/ecommerce/home.php
+RewriteRule cart$ src/pages/ecommerce/cart.php

@@ -31,7 +31,6 @@ Header Section Start
                         </div>
                     </li>
                     <li><a href="contact">Contato</a></li>
-                    <li><a href="ecommerce">Loja</a></li>
 
                     <?php 
                         if (isset($_SESSION['usuario'])) {
@@ -46,8 +45,12 @@ Header Section Start
                             }
                         ?>
 
+                        <li>
+                            <a href="ecommerce">Loja</a>
+                        </li>
+
                         <li class="cart">
-                            <a href="javascript:void(0);">
+                            <a href="cart">
                                 <span class="ion-ios-cart"></span>
                                 <span class="badge"><?= sizeOf($_SESSION['cart']) ?></span>
                             </a>

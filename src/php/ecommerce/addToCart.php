@@ -1,5 +1,5 @@
 <?php
-    $product = $_POST['product'];
+    $product = json_decode($_POST['product']);
 
     session_start();
     
