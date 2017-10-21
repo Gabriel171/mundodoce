@@ -22,6 +22,4 @@ RewriteRule france$ src/pages/france.php
 RewriteRule italy$ src/pages/italy.php
 RewriteRule england$ src/pages/england.php
 RewriteRule access$ src/pages/login.php
-RewriteRule admin$ src/pages/admin.php
-
-RewriteRule ecommerce$ src/pages/ecommerce/home.php
+RewriteRule dashboard/admin$ DashBoard/admin

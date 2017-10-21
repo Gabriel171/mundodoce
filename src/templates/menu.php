@@ -35,6 +35,7 @@ Header Section Start
                         </div>
                     </li>
                     <li><a href="contact">Contato</a></li>
+                    <li><a href="ecommerce">Loja</a></li>
 
                     <?php 
                         if (isset($_SESSION['usuario'])) {

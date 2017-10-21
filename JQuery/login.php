@@ -11,7 +11,7 @@
 </head> 
 <body> 
     <?php
-        include('verifica_usuario_ativo.php');
+        include_once('verifica_usuario_ativo.php');
     ?>
 
 <div data-role="page">

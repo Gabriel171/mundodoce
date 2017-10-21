@@ -3,13 +3,13 @@
 <head>
     <?php
         $path = "/templates/header.php";
-        include(dirname(__DIR__) . $path);
+        include_once(dirname(__DIR__) . $path);
     ?>
 </head>
 <body>
     <?php
         $path = "/templates/menu.php";
-        include(dirname(__DIR__) . $path);
+        include_once(dirname(__DIR__) . $path);
     ?>
     <!--
     ==================================================
