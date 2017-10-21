@@ -1,5 +1,6 @@
 var form = {};
 
+form.products = [];
 form.$grid = $('.ecommerce--grid');
 form.$cart = $('.main-menu .cart .badge');
 
@@ -11,8 +12,10 @@ form.list = function() {
             if (data) {
                 data = JSON.parse(data);
 
+                form.products = data;
+
                 for (var i = 0; i < data.length; i++) {
-                    form.$grid.append(form.getProductTemplate(data[i]));
+                    form.$grid.append(form.getProductTemplate(data[i], i));
                 }
             }
         },
@@ -22,33 +25,35 @@ form.list = function() {
     });
 };
 
-form.getProductTemplate = function(product) {
-    return vsprintf("<div class='col-md-3 ecommerce--grid--product'>" +
+form.getProductTemplate = function(product, index) {
+    return vsprintf("<div class='col-md-3 ecommerce--grid--product' data-index='%s'>" +
                          "<p>%s</p>" +
                          "<p>%s</p>" +
                          "<p>%s</p>" +
-                         "<button type='button' class='btn btn-default add-to-cart'>" +
+                         "<button type='button' class='btn btn-default add-to-cart' title='Adicionar ao carrinho'>" +
                             "<span class='ion-bag'></span>" +
                          "</button>" +
                     "</div>", 
-    [product.name, product.price, product.state]);
+    [index, product.name, product.price, product.state]);
 };
 
 form.addToCart = function (e) {
-    console.log($(e));
+    var $target = $(e.target),
+        $product = $target.is('button') ? $target.parent() : $target.parent().parent(),
+        product = {};
+
+    product = form.products[$product.data('index')];
 
     $.ajax({
         url: 'php/ecommerce/addToCart.php',
         dataType: 'json',
-        // data: { user: JSON.stringify(formObject) },
-        data: {},
+        data: { product: JSON.stringify(product) },
         type: 'post',
         success: function(data) {
             form.$cart.html(data);
-          console.log('sucessoooo');
         },
         error: function(error) {
-          console.error(error.responseText);
+          console.error(error);
         }
     });
 }
