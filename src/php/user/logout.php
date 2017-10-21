@@ -2,8 +2,8 @@
     session_start();
     
     if (isset($_SESSION['usuario'])) {
-        session_destroy();
-        $_SESSION = [];
+        unset($_SESSION['usuario']);
+        unset($_SESSION['roles']);
 
         $arr = array('message' => 'OK!!!', 'status' => '200');
         header('HTTP/1.1 200 OK');
