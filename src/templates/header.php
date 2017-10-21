@@ -37,6 +37,8 @@
 
 <!-- Template Javascript Files
 ================================================== -->
+<!-- Sprintf-js -->
+<script src="vendors/js/sprintf.min.js"></script>
 <!-- modernizr js -->
 <script src="vendors/js/modernizr-2.6.2.min.js"></script>
 <!-- jquery -->
@@ -50,6 +52,7 @@
 <!-- slider js -->
 <script src="vendors/js/slider.js"></script>
 <script src="vendors/js/jquery.fancybox.js"></script>
+
 <!-- template main js -->
 <script src="vendors/js/main.js"></script>
 
