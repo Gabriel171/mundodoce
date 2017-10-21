@@ -3,13 +3,13 @@
     <head>
         <?php
             $path = "/templates/ecommerce-header.php";
-            include_once(dirname(__DIR__, 2) . $path);
+            include_once(dirname(dirname(__DIR__)) . $path);
         ?>
     </head>
     <body>
         <?php
             $path = "/templates/menu.php";
-            include_once(dirname(__DIR__, 2) . $path);
+            include_once(dirname(dirname(__DIR__)) . $path);
         ?>
 
         <!-- 
@@ -70,7 +70,7 @@
 
         <?php
             $path = "/templates/footer.php";
-            include_once(dirname(__DIR__, 2) . $path);
+            include_once(dirname(dirname(__DIR__)) . $path);
         ?>
 
         <script src="app/js/ecommerce/cart.js"></script>
