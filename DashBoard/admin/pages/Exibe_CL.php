@@ -7,7 +7,7 @@
 	header('Content-Type: text/html; charset=utf-8');
 
 
-	mysqli_select_db($conecta, "cadastro") or print(mysqli_error());
+	mysqli_select_db($conecta, "login") or print(mysqli_error());
 
 	$sql = "SELECT id_cliente, nome, cpf, RG, data_nascimento, sexo, telefone, email, senha, estado FROM 'cadastrocliente' ";
 	$result=mysqli_query($conecta, $sql);

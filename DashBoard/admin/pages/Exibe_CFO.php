@@ -7,7 +7,7 @@
 	header('Content-Type: text/html; charset=utf-8');
 
 
-	mysqli_select_db($conecta, "cadastro") or print(mysqli_error());
+	mysqli_select_db($conecta, "login") or print(mysqli_error());
 
 	$sql = "SELECT id_fornecedor, nomeempresa, enderecoempresa, cidade, cep, pais, cgc, pessoacontato, telefonecomercial, email, banco, agencia, conta, referenciacomercial, estado FROM 'cadastrofornecedor'";
 	$result=mysqli_query($conecta, $sql);

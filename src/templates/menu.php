@@ -9,7 +9,7 @@ Header Section Start
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span>
             </button>
-            <img src="src/images/MundoDoce.png" class="img-responsive" height="60PX" width="50px";>
+            <img src="src/images/MundoDoce.png" class="img-responsive" height="90px" width="80px";>
             
             <!-- logo -->
             
@@ -40,10 +40,11 @@ Header Section Start
                         if (isset($_SESSION['usuario'])) {
                     ?>
                         <?php 
-                            if (isset($_SESSION['roles']) && in_array("ADMIN", $_SESSION['roles'])) {
+                            if (isset($_SESSION['roles']) && 
+                            (in_array("ADMIN", $_SESSION['roles']) || in_array("FUNC", $_SESSION['roles']))) {
 
                         ?>
-                            <li><a href="dashboard/admin">Dashboard</a></li>
+                            <li><a href="http://localhost/MundoDoceRemaster/dashboard/admin/pages/index.php">Dashboard</a></li>
                         <?php
                             }
                         ?>

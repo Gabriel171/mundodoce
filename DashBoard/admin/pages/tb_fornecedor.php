@@ -87,6 +87,16 @@ include_once(dirname(__DIR__) . $path);
     
     while($consulta=mysqli_fetch_array($result))
     {
+        $editButton = '';
+        
+                                                        if (isset($_SESSION['usuario']) 
+                                                        && isset($_SESSION['roles']) 
+                                                        && in_array("ADMIN", $_SESSION['roles']) ) {
+                                                            $editButton = 
+                                                            "<td><a href='edit_fornecedor.php?id_fornecedor=$consulta[id_fornecedor]'>
+                                                            <button type='button' class='btn btn-info btn-circle'><i class='fa fa-pencil' title='Editar 
+                                                            registro $consulta[id_fornecedor]' ></i></button></a></td>";
+                                                        }
         echo "
                                         
                                     <tbody>
@@ -101,7 +111,7 @@ include_once(dirname(__DIR__) . $path);
                                            
                                             <td>$consulta[dt_atualiza]</td>
 
-                                            <td><a href='edit_fornecedor.php?id_fornecedor=$consulta[id_fornecedor]'><button type='button' class='btn btn-info btn-circle'><i class='fa fa-pencil' title='Editar registro $consulta[id_fornecedor]' ></i></button></a></td>
+                                            $editButton
                                         </tr>";
       
     }

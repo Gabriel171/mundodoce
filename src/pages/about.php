@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html class="no-js">
+    <head>
     <?php
         $path = "/templates/header.php";
         include_once(dirname(__DIR__) . $path);
     ?>
+    </head>
     <body>
         <?php
             $path = "/templates/menu.php";
@@ -105,10 +107,12 @@
         ================================================== -->
         <section id="team">
             <div class="container">
-                <div class="row">
-                    <h2 class="subtitle text-center">Nosso Time</h2>
+                <div class="row col-md-12">
+                    <div class="col-md-3 ">
+                    </div>
                     
-                    <div class="col-md-3">
+                    
+                    <div class="col-md-3 ">
                         <div class="team-member wow fadeInLeft" data-wow-duration="500ms" data-wow-delay=".5s">
                             <div class="team-img">
                                 <img src="images/team/team-2.jpg" class="team-pic" alt="">

@@ -1,6 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
 
+<html lang="en">
+        <?php
+        session_start();
+        ?>
+       <?php
+   if (!isset($_SESSION['roles']) || 
+   !(in_array("ADMIN", $_SESSION['roles']) || in_array("FUNC", $_SESSION['roles']))) {
+      header('Location: http://localhost/MundoDoceRemaster/index');
+    }
+ ?>
 <head>
 
     <meta charset="utf-8">
@@ -65,7 +74,7 @@
                                 <span class="input-group-btn">
                                 <button class="btn btn-default" type="button">
                                     <i class="fa fa-search"></i>
-                                    <a href="index">
+                                    <a href="php/user/logout.php">
                                     <span class="input-group-btn">
                                      <button class="btn btn-default" type="button">
                                      <i class=""></i>Sair</a>
@@ -90,7 +99,7 @@
                                     <a href="CadastroFornecedor.php">Cadastro Fornecedor</a>
                                 </li>
                                 <li>
-                                    <a href="CadastroFuncionários.php">Cadastro Funcionário</a>
+                                    <a href="CadastroFuncionarios.php">Cadastro Funcionário</a>
                                 </li>
                             </ul>
                             <a href=""><i class="fa fa-table fa-fw"></i>Tabelas<span class="fa arrow"></span></a>

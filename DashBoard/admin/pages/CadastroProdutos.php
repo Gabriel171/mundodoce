@@ -31,58 +31,77 @@
                         <div class="panel-body">
                             <div class="row">
                                 <div class="col-lg-6">
-                                <form action="Envia_Produto.php" method="get">
+                                <form action="Envia_Produto.php" method="post" enctype="multipart/form-data">
                                         <div class="form-group">
                                             <label>Nome do Produto</label>
-                                             <input type="text" class="form-control" placeholder="Inserir o nome do produto" id="nomeproduto" name="nomeproduto" required>
+                                             <input type="text" class="form-control" 
+                                             placeholder="Inserir o nome do produto" id="nomeproduto" 
+                                             name="nomeproduto" value="111"required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Imagem</label>
+                                            <input type="file" name="imagem" class="form-control" id="imagem" />
                                         </div>
                                         <div class="form-group">
                                             <label>Codigo do Produto</label>
-                                             <input type="text" class="form-control" placeholder="Inserir o código do produto" id="codigoproduto" name="codigoproduto" required>
+                                             <input type="text" class="form-control"
+                                             placeholder="Inserir o código do produto" id="codigoproduto" 
+                                             name="codigoproduto" value="111"required>
                                         </div>
                                          <div class="form-group">
                                             <label>Marca</label>
-                                             <input type="text" class="form-control" placeholder="Inserir marca" id="marca" name="marca" required>
+                                             <input type="text" class="form-control"
+                                              placeholder="Inserir marca" id="marca" name="marca" value="111"required>
                                         </div>
                                         <div class="form-group">
                                             <label>Fornecedor</label>
-                                             <input type="text" class="form-control" placeholder="Inserir fornecedor" id="fornecedor" name="fornecedor" required>
+                                             <input type="text" class="form-control" 
+                                             placeholder="Inserir fornecedor" id="fornecedor" name="fornecedor" value="111"required>
                                         </div>
                                         <div class="form-group">
                                             <label>Unidade</label>
-                                             <input type="text" class="form-control" placeholder="Inserir unidade" id="unidade" name="unidade" required>
+                                             <input type="text" class="form-control"
+                                              placeholder="Inserir unidade" id="unidade" name="unidade" value="111"required>
                                         </div>
                                         <div class="form-group">
                                             <label>Peso</label>
-                                             <input type="text" class="form-control" placeholder="Inserir peso" id="peso" name="peso" required>
+                                             <input type="text" class="form-control"
+                                              placeholder="Inserir peso" id="peso" name="peso" value="111"required>
                                         </div>
                                         <div class="form-group">
                                             <label>Estoque Minimo</label>
-                                             <input type="text" class="form-control" placeholder="Inserir estoque mininmo" id="estoqueminimo" name="estoqueminimo" required>
+                                             <input type="text" class="form-control"
+                                              placeholder="Inserir estoque mininmo" id="estoqueminimo" name="estoqueminimo" value="111"required>
                                         </div>
                                         <div class="form-group">
                                             <label>Estoque Maximo</label>
-                                             <input type="text" class="form-control" placeholder="Inserir estoque maximo" id="estoquemaximo" name="estoquemaximo" required>
+                                             <input type="text" class="form-control"
+                                              placeholder="Inserir estoque maximo" id="estoquemaximo" name="estoquemaximo" value="111"required>
                                         </div>
                                         <div class="form-group">
                                             <label>Código GTIN/EAN</label>
-                                             <input type="text" class="form-control" placeholder="Inserir codigo GTIN/EAN" id="codigogtin" name="codigogtin" required>
+                                             <input type="text" class="form-control" 
+                                             placeholder="Inserir codigo GTIN/EAN" id="codigogtin" name="codigogtin" value="111"required>
                                         </div>
                                         <div class="form-group">
                                             <label>Valor de venda</label>
-                                             <input type="text" class="form-control" placeholder="Inserir valor de venda" id="valorvenda" name="valorvenda" required>
+                                             <input type="text" class="form-control" 
+                                             placeholder="Inserir valor de venda" id="valorvenda" name="valorvenda" value="111"required>
                                         </div>
                                         <div class="form-group">
                                             <label>Valor de custo</label>
-                                             <input type="text" class="form-control" placeholder="Inserir valor de custo" id="valorcusto" name="valorcusto" required>
+                                             <input type="text" class="form-control" 
+                                             placeholder="Inserir valor de custo" id="valorcusto" name="valorcusto" value="111"required>
                                         </div>
                                         <div class="form-group">
                                             <label>Origem do produto</label>
-                                             <input type="text" class="form-control" placeholder="Inserir origem do produto" id="origemproduto" name="origemproduto" required>
+                                             <input type="text" class="form-control" 
+                                             placeholder="Inserir origem do produto" id="origemproduto" name="origemproduto" value="111"required>
                                         </div>
                                         <div class="form-group">
                                             <label>Situação</label>
-                                             <input type="text" class="form-control" placeholder="Inserir situação" id="situação" name="situação" required>
+                                             <input type="text" class="form-control" 
+                                             placeholder="Inserir situação" id="situação" name="situação" value="111"required>
                                         </div>
                                         <div class="form-group">
                                             <label>Estado</label>

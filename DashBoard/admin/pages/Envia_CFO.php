@@ -22,7 +22,7 @@
 	$estado = $_GET['estado'];
 	
 
-	mysqli_select_db($conecta, "cadastro") or print(mysqli_error());
+	mysqli_select_db($conecta, "login") or print(mysqli_error());
 
 	$sql = "INSERT INTO cadastrofornecedor (nomeempresa, enderecoempresa, cidade, cep, pais, cgc, pessoacontato, telefonecomercial, email, banco, agencia, conta, estado, dt_atualiza) 
 			VALUES ('$nomeempresa', '$enderecoempresa', '$cidade', '$cep', '$pais', '$cgc','$pessoacontato', '$telefonecomercial', '$email','$banco', '$agencia', '$conta', '$estado', now())";
@@ -34,7 +34,7 @@
 
 	mysqli_close($conecta); 
 
-	echo "<script>alert('$nomeempresa inserido com êxito!'); location.href='CadastroFornecedor.html'; </script>";	
+	echo "<script>alert('$nomeempresa inserido com êxito!'); location.href='CadastroFornecedor.php'; </script>";	
 
 
 ?>

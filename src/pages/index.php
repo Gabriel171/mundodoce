@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html class="no-js">
+<head>
     <?php
         $path = "/templates/header.php";
         include(dirname(__DIR__) . $path);
     ?>
+</head>
 <body>
     <?php
         $path = "/templates/menu.php";
@@ -22,6 +24,7 @@
                         <!-- Slider -->
                         <section class="cd-intro">
                             <h1 class="wow fadeInUp animated cd-headline slide" data-wow-delay=".4s" >
+                            <background src="src/images/DoceMundo.jpg" class="img-responsive" >
                             <span>Olá, somos a Empresa</span><br>
                             <span class="cd-words-wrapper">
                                 <b class="is-visible">Mundo Doce</b>

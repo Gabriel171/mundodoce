@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html class="no-js">
+    <head>
     <?php
         $path = "/templates/header.php";
         include_once(dirname(__DIR__) . $path);
     ?>
+    </head>
     <body>
         <?php
             $path = "/templates/menu.php";
@@ -36,59 +38,77 @@
             <section id="blog-full-width">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-12">
-                                <div class="blog-post-image">
-                                    <a href="post-fullwidth.html"><img class="img-responsive" src="images/blog/item1.jpg" alt="" /></a>
-                                </div>
-                                <div class="blog-content">
-                                    <h2 class="blogpost-title">
-                                    <a href="post-fullwidth.html"> Paris Brest</a>
-                                    </h2>
-                                    <div class="blog-meta">
+                         <div class="col-sm-4 col-xs-12">
+                                <div class="img-wrapper">
+                                    <img src="images/portfolio/item1.jpg" class="img-responsive" alt="this is a title" >
+                                    <div class="overlay">
+                                        <div class="buttons">
+                                            <a rel="gallery" class="fancybox" href="images/portfolio/item1.jpg"></a>
+                                            <a target="_blank" href="single-portfolio.html"></a>
+                                        </div>
                                     </div>
-                                    <p>França
-                                    </p>
                                 </div>
+                                <figcaption>
+                                <h4>
+                                <a>
+                                    Paris Brest
+                                </a>
+                                </h4>
+                                <p>
+                                    França
+                                </p>
+                                </figcaption>
+                            </figure>
+                        </div>
                                 
-                            </article>
-                            <article class="wow fadeInDown" data-wow-delay=".5s" data-wow-duration="500ms">
-                                <div class="blog-post-image">
-                                    <a href="post-fullwidth.html"><img class="img-responsive" src="images/blog/item2.jpg" alt="" /></a>
+                            <div class="col-sm-4 col-xs-12">
+                                <div class="img-wrapper">
+                                    <img src="images/portfolio/item2.jpg" class="img-responsive" alt="this is a title" >
+                                    <div class="overlay">
+                                        <div class="buttons">
+                                            <a rel="gallery" class="fancybox" href="images/portfolio/item2.jpg"></a>
+                                            <a target="_blank" href="single-portfolio.html"></a>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="blog-content">
-                                    <h2 class="blogpost-title">
-                                    <a href="post-fullwidth.html">Macaron</a>
-                                    </h2>
-                                    <div class="blog-meta">
-                                    
-                                    <p>França
-                                    </p>
+                                <figcaption>
+                                <h4>
+                                <a>
+                                    Macaron
+                                </a>
+                                </h4>
+                                <p>
+                                    França
+                                </p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                            <div class="col-sm-4 col-xs-12">
+                                <div class="img-wrapper">
+                                    <img src="images/portfolio/item3.jpg" class="img-responsive" alt="" >
+                                    <div class="overlay">
+                                        <div class="buttons">
+                                            <a rel="gallery" class="fancybox" href="images/portfolio/item3.jpg"></a>
+                                            <a target="_blank" href="single-portfolio.html"></a>
+                                        </div>
+                                    </div>
                                 </div>
-                                
-                            </article>
-                            <article class="wow fadeInDown" data-wow-delay=".7s" data-wow-duration="500ms">
-                                <div class="blog-post-image">
-                                    <a href="post-fullwidth.html"><img class="img-responsive" src="images/blog/item3.jpg" alt="" /></a>
-                                </div>
-                                <div class="blog-content">
-                                    <h2 class="blogpost-title">
-                                    <a href="post-fullwidth.html">Eclair</a>
-                                    </h2>
-                                    <div class="blog-meta">
-                                    
-                                    <p>França
-                                    </p>
-                                </div>
-                                
-                            </article>
+                                <figcaption>
+                                <h4>
+                                <a>
+                                    Eclair
+                                </a>
+                                </h4>
+                                <p>
+                                    França
+                                </p>
+                                </figcaption>
+                            </figure>
+                        </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <!--
-            ==================================================
-            Call To Action Section Start
-            ================================================== -->
             <section id="call-to-action">
                 <div class="container">
                     <div class="row">

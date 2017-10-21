@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-    <?php
-    $path = "/header.php";
-    include_once(dirname(__DIR__) . $path);
-?>
+<?php
+        $path = "/header.php";
+        include_once(dirname(__DIR__) . $path);
+    ?>
+
 
 <body>
 <?php
         $path = "/menu.php";
         include_once(dirname(__DIR__) . $path);
     ?>
+    
+
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">Cadastro Cliente</h1>
+                    <h1 class="page-header">Cadastro de Funcionários</h1>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
@@ -22,93 +25,27 @@
                 <div class="col-lg-12">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            Cadastro Cliente
+                            Cadastro Funcionários
                         </div>
                         <div class="panel-body">
                             <div class="row">
                                 <div class="col-lg-6">
-                                         <form action="Envia_CL.php" method="get">
+                                    <form action="Envia_Funcionario.php" method="get">
                                         <div class="form-group">
-                                            <label>Nome</label>
-                                           <input type="text" class="form-control" placeholder="Insira o seu nome" id="nome" name="nome" required>
+                                            <label>Nome Completo</label>
+                                            <input type="text" class="form-control" placeholder="Insira o seu nome" id="nomecompleto" name="nomecompleto" >
                                         </div>
                                         <div class="form-group">
                                              <label>CPF</label> 
                                              <input class="form-control" placeholder="Insira o seu CPF" type="text" name="cpf" maxlength="11" onblur="return verificarCPF(this.value)" id="cpf">
                                         </div>
-                                            <script>
-                                                                function verificarCPF(c){
-                                                                var i;
-                                                                s = c;
-                                                                var c = s.substr(0,9);
-                                                                var dv = s.substr(9,2);
-                                                                var d1 = 0;
-                                                                var v = false;
-                                                             
-                                                                for (i = 0; i < 9; i++){
-                                                                    d1 += c.charAt(i)*(10-i);
-                                                                }
-                                                                if (d1 == 0){
-                                                                    alert("CPF Inválido")
-                                                                    v = true;
-                                                                    return false;
-                                                                }
-                                                                d1 = 11 - (d1 % 11);
-                                                                if (d1 > 9) d1 = 0;
-                                                                if (dv.charAt(0) != d1){
-                                                                    alert("CPF Inválido")
-                                                                    v = true;
-                                                                    return false;
-                                                                }
-                                                             
-                                                                d1 *= 2;
-                                                                for (i = 0; i < 9; i++){
-                                                                    d1 += c.charAt(i)*(11-i);
-                                                                }
-                                                                d1 = 11 - (d1 % 11);
-                                                                if (d1 > 9) d1 = 0;
-                                                                if (dv.charAt(1) != d1){
-                                                                    alert("CPF Inválido")
-                                                                    v = true;
-                                                                    return false;
-                                                                }
-                                                                if (!v) {
-                                                                    alert(c + "CPF Válido")
-                                                                }
-                                                            }
-                                                }
-                                            }
-                                            </script>
-
-                                        <div class="form-group">
-                                            <label>RG</label>
-                                            <input type="text" class="form-control" placeholder="Insira o seu RG" id="rg" name="rg" required>
-                                        </div>
-                                        <div class="form-group">
-                                            <label>Data de Nascimento</label>
-                                            <input type="text" class="form-control" placeholder="Insira a sua data de nascimento" id="data_nascimento" name="data_nascimento" required>
-                                        </div>
-                                        <div class="form-group">
-                                            <label>Sexo</label>
-                                            <select class="form-control" id="sexo" name="sexo">
-                                                <option>Selecione</option>
-                                                <option value="M">Masculino</option>
-                                                <option value="F">Feminino</option>
-                                            </select>
-                                        </div> 
-                                        <div class="form-group">
-                                            <label>Telefone</label>
-                                            <input type="text" class="form-control" placeholder="Insira o seu telefone" id="telefone" name="telefone" required>
-                                        </div>
-                                       
-                                        <div class="form-group">
-                                            <label>E-mail</label>
-                                            <input type="email" class="form-control" placeholder="nome@email.com" id="email" name="email" required>
-                                        </div> 
+                                            
                                          <div class="form-group">
-                                            <label>Senha</label>
-                                           <input type="password" class="form-control" placeholder="Insira a sua senha" id="senha" name="senha" required>
+                                            <label>RG</label>
+                                            <input type="text" class="form-control" placeholder="Insira o seu RG" id="rg" name="rg" >
                                         </div>
+                                        <div class="form-group">
+                                            
                                         <script type='text/javascript' >
                                             
                                             function limpa_formulário_cep() {
@@ -180,50 +117,73 @@
                                             };
 
                                             </script>
-                                        <div>
+
                                             <label>CEP</label>
                                             <input class="form-control" placeholder="Insira o seu CEP " onblur="pesquisacep(this.value)" id="cep" name="cep" type="">
                                         </div>
                                         <div class="form-group">
+                                            <label>Data de Nascimento</label>
+                                            <input type="date" class="form-control" placeholder="Insira a sua data de nascimento" id="data_nascimento" name="data_nascimento" >
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Telefone Principal</label>
+                                            <input type="text" class="form-control" placeholder="Insira o seu telefone" id="telefone" name="telefone" >
+                                        </div>
+                                        <div class="form-group">
+                                            <label>E-mail</label>
+                                            <input type="email" class="form-control" placeholder="nome@email.com" id="email" name="email" >
+                                        </div> 
+                                        <div class="form-group">
+                                            <label>Senha</label>
+                                            <input type="password" class="form-control" placeholder="Insira sua senha" id="password" name="senha" >
+                                        </div> 
+                                        <div class="form-group">
                                             <label>Endereço</label>
-                                            <input type="text" class="form-control" placeholder="Insira o seu endereço" id="endereco" name="endereco" required>
+                                            <input type="text" class="form-control" placeholder="Insira o seu endereço" id="endereco" name="endereco" >
                                         </div>
                                         <div class="form-group">
                                             <label>Bairro </label>
-                                            <input type="text" class="form-control" placeholder="Insira o seu bairro" id="bairro" name="bairro" required>
+                                            <input type="text" class="form-control" placeholder="Insira o seu bairro" id="bairro" name="bairro" >
                                         </div>
                                         <div class="form-group">
                                             <label>Cidade</label>
-                                            <input type="text" class="form-control" placeholder="Insira a sua cidade" id="cidade" name="cidade" required>
-                                        </div>     
+                                            <input type="text" class="form-control" placeholder="Insira a sua cidade" id="cidade" name="cidade" >
+                                        </div>
                                         <div class="form-group">
                                             <label>Estado</label>
-                                            <input type="text" class="form-control" placeholder="Insira o seu estado" id="estado" name="estado" required>
+                                            <input type="text" class="form-control" placeholder="Insira o seu estado" id="estado" name="estado" >
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="radio" id="isAdmin" name="isAdmin" value="ADMIN">
+                                            <label for="isAdmin">Admin?</label>
+                                        </div>
+                                             <div class="form-group">
+                                             <input type="radio" id="isAdmin" name="isAdmin" value="FUNC">
+                                             <label for="isAdmin">Func?</label>
                                         </div>
                                         <button type="submit" class="btn btn-default">Enviar</button>
                                     </form>
                                 </div>
-                            </div>
-                        </div>
-
-  <!-- jQuery -->
-  <?php
+                                
+                                <?php
         $path = "/script.php";
         include_once(dirname(__DIR__) . $path);
     ?>
-    
+   
     <script>
         $(document).ready(function(){
             $("#telefone").mask("(00)00000-0000");
         });
+        
         $(document).ready(function(){
-            $("#data_nascimento").mask("00/00/0000");
+            $("#cpf").mask("000.000.000-00");
         });
         
+        $(document).ready(function(){
+            $("#cep").mask("00000-000");
+        });
     </script>
-    <!-- Bootstrap Core JavaScript -->
-   
-
+  
 </body>
 
 </html>

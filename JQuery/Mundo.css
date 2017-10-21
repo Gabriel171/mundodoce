@@ -1,0 +1,30 @@
+.ui-bar-c{
+	background: #ff528e;
+	color:#000000;
+}
+.ui-body-c, .ui-dialog.ui-overlay-c{
+	color:#000000
+}
+h3,
+h4{
+	color:#ff528e;
+}
+.ui-btn input, .ui-btn button{
+	background: #ff528e;
+}
+body {
+    background: url(imagens/Doce.jpeg);
+    background-repeat:repeat-y;
+    background-position:center center;
+    background-attachment:scroll;
+    background-size:100% 100%;
+    background: transparent;
+}
+
+.ui-page {
+    background: transparent;
+}
+
+.ui-content{
+    background: transparent;
+}

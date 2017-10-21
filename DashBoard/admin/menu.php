@@ -1,6 +1,7 @@
  <?php
-    if (!isset($_SESSION['usuario']) || !isset($_SESSION['roles']) || !in_array('ADMIN', $_SESSION['roles'])) {
-        header('Location: http://localhost/MundoDoceRemaster/index');
+   if (!isset($_SESSION['roles']) || 
+   !(in_array("ADMIN", $_SESSION['roles']) || in_array("FUNC", $_SESSION['roles']))) {
+      header('Location: http://localhost/MundoDoceRemaster/index');
     }
  ?>
  
@@ -35,10 +36,11 @@
                                 <button class="btn btn-default" type="button">
                                     <i class="fa fa-search"></i>
                                   
-                                    <a href="../../../../MundoDoceRemaster/index">
+                                    <a href="php/user/logout.php">
                                     <span class="input-group-btn">
                                      <button class="btn btn-default" type="button">
                                      <i class=""></i>Sair</a>
+                                   
                                      </button>
                                 </button>
                             </span>
@@ -60,7 +62,7 @@
                                     <a href="CadastroFornecedor.php">Cadastro Fornecedor</a>
                                 </li>
                                 <li>
-                                    <a href="CadastroFuncionários.php">Cadastro Funcionário</a>
+                                    <a href="CadastroFuncionarios.php">Cadastro Funcionário</a>
                                 </li>
                             </ul>
                             <a href=""><i class="fa fa-table fa-fw"></i>Tabelas<span class="fa arrow"></span></a>

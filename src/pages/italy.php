@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html class="no-js">
+    <head>
     <?php
         $path = "/templates/header.php";
         include_once(dirname(__DIR__) . $path);
     ?>
+    </head>
     <body>
         <?php
             $path = "/templates/menu.php";
@@ -43,49 +45,76 @@
                                             </div><!-- /input-group -->
                                         </form>
                                     </div>
-                                    
-                                    
-                                    
+                            
                                    
                                 </div>
                             </div>
-                            <div class="col-md-8">
-                                    <div class="blog-post-image">
-                                        <a href="post-fullwidth.html"><img class="img-responsive" src="images/blog/item4.jpg" alt="" /></a>
+                            <div class="col-sm-4 col-xs-12">
+                                <div class="img-wrapper">
+                                    <img src="images/portfolio/item3.jpg" class="img-responsive" alt="" >
+                                    <div class="overlay">
+                                        <div class="buttons">
+                                            <a rel="gallery" class="fancybox" href="images/portfolio/item3.jpg"></a>
+                                            <a target="_blank" href="single-portfolio.html"></a>
+                                        </div>
                                     </div>
-                                    <div class="blog-content">
-                                        <h2 class="blogpost-title">
-                                        <a href="post-fullwidth.html">Eclair</a>
-                                        </h2>
-                                            
-                                        <p>Itália
-                                        </p>
+                                </div>
+                                <figcaption>
+                                <h4>
+                                <a>
+                                    Eclair
+                                </a>
+                                </h4>
+                                <p>
+                                    França
+                                </p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                                    <div class="col-sm-4 col-xs-12">
+                                <div class="img-wrapper">
+                                    <img src="images/portfolio/item4.jpg" class="img-responsive" alt="" >
+                                    <div class="overlay">
+                                        <div class="buttons">
+                                            <a rel="gallery" class="fancybox" href="images/portfolio/item4.jpg"></a>
+                                            <a target="_blank" href="single-portfolio.html"></a>
+                                        </div>
                                     </div>
-                                </article>
-                                    <div class="blog-post-image">
-                                        <a href="post-fullwidth.html"><img class="img-responsive" src="images/blog/item5.jpg" alt="" /></a>
+                                </div>
+                                <figcaption>
+                                <h4>
+                                <a>
+                                   Panna Cotta
+                                </a>
+                                </h4>
+                                <p>
+                                    Itália
+                                </p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                                    <div class="col-sm-4 col-xs-12">
+                                <div class="img-wrapper">
+                                    <img src="images/portfolio/item5.jpg" class="img-responsive" alt="" >
+                                    <div class="overlay">
+                                        <div class="buttons">
+                                            <a rel="gallery" class="fancybox" href="images/portfolio/item5.jpg"></a>
+                                            <a target="_blank" href="single-portfolio.html"></a>
+                                        </div>
                                     </div>
-                                    <div class="blog-content">
-                                        <h2 class="blogpost-title">
-                                        <a href="post-fullwidth.html">Panna Cotta</a>
-                                        </h2>
-                                        
-                                        <p>Itália
-                                        </p>
-                                    </div>
-                                </article>
-                                    <div class="blog-post-image">
-                                        <a href="post-fullwidth.html"><img class="img-responsive" src="images/blog/item6.jpg" alt="" /></a>
-                                    </div>
-                                    <div class="blog-content">
-                                        <h2 class="blogpost-title">
-                                        <a href="post-fullwidth.html">Tiramisu</a>
-                                        </h2>
-                                        
-                                        <p>Itália
-                                        </p>
-                                    </div>
-                                </article>
+                                </div>
+                                <figcaption>
+                                <h4>
+                                <a>
+                                    Tiramisu
+                                </a>
+                                </h4>
+                                <p>
+                                    Itália
+                                </p>
+                                </figcaption>
+                            </figure>
+                        </div>
                             </div>
                         </div>
                     </section>

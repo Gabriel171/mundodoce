@@ -18,7 +18,7 @@
 	$estado = $_GET['estado'];
 	
 
-	mysqli_select_db($conecta, "cadastro") or print(mysqli_error());
+	mysqli_select_db($conecta, "login") or print(mysqli_error());
 
 	$sql = "INSERT INTO cadastrocliente (nome, cpf, rg, data_nascimento, sexo, telefone, email, senha, estado, dt_atualiza) 
 			VALUES ('$nome', '$cpf', '$rg', '$data_nascimento', '$sexo','$telefone', '$email','$senha', '$estado', now())";
@@ -31,7 +31,7 @@
  
 	
 
-	echo "<script>alert('$nome inserido com êxito!'); location.href='Cadastrocliente.html'; </script>";	
+	echo "<script>alert('$nome inserido com êxito!'); location.href='Cadastrocliente.php'; </script>";	
 
 
 ?>

@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html class="no-js">
+    <head>
     <?php
         $path = "/templates/header.php";
         include_once(dirname(__DIR__) . $path);
     ?>
+    </head>
     <body>
         <?php
             $path = "/templates/menu.php";

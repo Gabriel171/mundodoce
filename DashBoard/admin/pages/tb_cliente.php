@@ -59,67 +59,62 @@
                             <div class='table-responsive'>
                                 <table class='table table-striped table-bordered table-hover'>
                                     <thead>
-                                    <tr>
-                                           
+                                        <tr>
                                             <th>Nome</th>
-                                           
                                             <th>Rg</th>
-                                           
-                                            
-                                            
                                             <th>Email</th>
                                             <th>Senha</th>
-                                            
                                             <th>Dt_atualiza</th>
-
                                         </tr>
                                     </thead>
+                                    
+                                    <tbody>
 
-                                    <?php
-                                        
-                                        include 'Conecta_CL.php';
-                                        
-                                       
-                                        //Meta Charset no Arquivo (UFT-8)
-                                        
-                                        mysqli_select_db($conecta,"login") or
-                                        print(mysqli_error());
-                                        
-                                        $sql = "SELECT  id_cliente, nome, cpf, rg, data_nascimento, sexo, telefone, email, senha, estado, dt_atualiza FROM `cadastrocliente`";    
-                                        
-                                        $result=mysqli_query($conecta,$sql);
-                                        
-                                        while($consulta=mysqli_fetch_array($result))
-                                        {
-                                            echo "
-                                                                            
-                                                                        <tbody>
-                                                                            <tr>
-                                                                                
-                                                                                <td>$consulta[nome]</td>
-                                                                                <td>$consulta[cpf]</td>
-                                                                               
-                                                                                
-                                                                               
+                                        <?php
+                                            include 'Conecta_CL.php';
+                                            
+                                            mysqli_select_db($conecta,"login") or
+                                            print(mysqli_error());
+                                            
+                                            $sql = "SELECT  id_cliente, nome, cpf, rg, data_nascimento, sexo, telefone, email, senha, estado, dt_atualiza FROM `cadastrocliente`";    
+                                            
+                                            $result=mysqli_query($conecta,$sql);
+                                            
+                                            while ($consulta = mysqli_fetch_array($result))  {
+                                                $editButton = '';
 
-                                                                                <td>$consulta[email]</td>
-                                                                                <td>$consulta[senha]</td>
-                                                                               
-                                                                                <td>$consulta[dt_atualiza]</td>
+                                                if (isset($_SESSION['usuario']) 
+                                                && isset($_SESSION['roles']) 
+                                                && in_array("ADMIN", $_SESSION['roles']) ) {
+                                                    $editButton = 
+                                                    "<td><a href='edit_cliente.php?id_cliente=$consulta[id_cliente]'>
+                                                    <button type='button' class='btn btn-info btn-circle'><i class='fa fa-pencil' title='Editar 
+                                                    registro $consulta[id_cliente]' ></i></button></a></td>";
+                                                }
 
-                                                                                <td><a href='edit_cliente.php?id_cliente=$consulta[id_cliente]'><button type='button' class='btn btn-info btn-circle'><i class='fa fa-pencil' title='Editar registro $consulta[id_cliente]' ></i></button></a></td>
-                                                                            </tr>";
-                                          
-                                        }
-                                        mysqli_free_result($result);
-                                        
-                                        mysqli_query($conecta,$sql); 
-                                        
-                                        //encerra a conex‹o.
-                                        mysqli_close($conecta); 
-                                    ?>
+                                                echo "
+                                                <tr>
+                                                    <td>$consulta[nome]</td>
+                                                    <td>$consulta[cpf]</td>
 
-</tbody>
+                                                    <td>$consulta[email]</td>
+                                                    <td>$consulta[senha]</td>
+                                                    
+                                                    <td>$consulta[dt_atualiza]</td>
+
+                                                    $editButton
+                                                </tr>";
+                                            }
+
+                                            mysqli_free_result($result);
+                                            
+                                            mysqli_query($conecta,$sql); 
+                                            
+                                            //encerra a conex‹o.
+                                            mysqli_close($conecta); 
+                                        ?>
+
+                                    </tbody>
                                 </table>
                             </div>
                             <!-- /.table-responsive -->

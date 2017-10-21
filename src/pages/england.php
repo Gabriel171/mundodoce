@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html class="no-js">
+    <head>
     <?php
         $path = "/templates/header.php";
         include_once(dirname(__DIR__) . $path);
     ?>
+    </head>
     <body>
         <?php
             $path = "/templates/menu.php";
@@ -35,68 +37,84 @@
             <section id="blog-full-width">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-8">
-                                <div class="blog-post-image">
-                                    <a href="post-fullwidth.html"><img class="img-responsive" src="images/blog/Scones1.jpg" alt="" /></a>
-                                </div>
-                                <div class="blog-content">
-                                    <h2 class="blogpost-title">
-                                    <a href="post-fullwidth.html">Scones</a>
-                                    </h2>
-                                    
-                                    <p>Inglaterra
-                                    </p>
-                                </div>
-                                
-                            </article>
-                                <div class="blog-post-image">
-                                    <a href="post-fullwidth.html"><img class="img-responsive" src="images/blog/summer1.jpg" alt="" /></a>
-                                </div>
-                                <div class="blog-content">
-                                    <h2 class="blogpost-title">
-                                    <a href="post-fullwidth.html">Summer Pudding</a>
-                                    </h2>
-                                    
-                                    <p>Inglaterra
-                                    </p>
-                                </div>
-                                
-                            </article>
-                            <article class="wow fadeInDown" data-wow-delay=".7s" data-wow-duration="500ms">
-                                <div class="blog-post-image">
-                                    <a href="post-fullwidth.html"><img class="img-responsive" src="images/blog/trifle1.jpg" alt="" /></a>
-                                </div>
-                                <div class="blog-content">
-                                    <h2 class="blogpost-title">
-                                    <a href="post-fullwidth.html">Trifle</a>
-                                    </h2>
-                                    
-                                    <p>Inglaterra
-                                    </p>
-                                </div>
-                                
-                            </article>
-                        </div>
                         <div class="col-md-4">
                             <div class="sidebar">
-                               
+                                        <div class="input-group">
+                                            <span class="input-group-btn">
+                                            </span>
+                                            </div><!-- /input-group -->
+                                        </form>
+                                    </div>
+                            
+                                   
+                                </div>
                             </div>
-                        </div>
-                    </section>
-                    <!--
-                    ==================================================
-                    Call To Action Section Start
-                    ================================================== -->
-                    <section id="call-to-action">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="block">
-                                        
-                                        <a href="contact.html" class="btn btn-default btn-contact wow fadeInDown" data-wow-delay=".7s" data-wow-duration="300ms">ENTRE EM CONTATO CONOSCO</a>
+                            <div class="col-sm-4 col-xs-12">
+                                <div class="img-wrapper">
+                                    <img src="images/blog/Scones1.jpg" class="img-responsive" alt="" >
+                                    <div class="overlay">
+                                        <div class="buttons">
+                                            <a rel="gallery" class="fancybox" href="images/blog/Scones1.jpg"></a>
+                                            <a target="_blank" ></a>
+                                        </div>
                                     </div>
                                 </div>
-                                
+                                <figcaption>
+                                <h4>
+                                <a>
+                                    Scones
+                                </a>
+                                </h4>
+                                <p>
+                                    Inglaterra
+                                </p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                                    <div class="col-sm-4 col-xs-12">
+                                <div class="img-wrapper">
+                                    <img src="images/blog/summer1.jpg" class="img-responsive" alt="" >
+                                    <div class="overlay">
+                                        <div class="buttons">
+                                            <a rel="gallery" class="fancybox" href="images/blog/summer1.jpg"></a>
+                                            <a target="_blank"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <figcaption>
+                                <h4>
+                                <a>
+                                   Summer Pudding
+                                </a>
+                                </h4>
+                                <p>
+                                    Inglaterra
+                                </p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                                    <div class="col-sm-4 col-xs-12">
+                                <div class="img-wrapper">
+                                    <img src="images/blog/trifle1.jpg" class="img-responsive" alt="" >
+                                    <div class="overlay">
+                                        <div class="buttons">
+                                            <a rel="gallery" class="fancybox" href="images/blog/trifle1.jpg"></a>
+                                            <a target="_blank" ></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <figcaption>
+                                <h4>
+                                <a>
+                                    Trifle
+                                </a>
+                                </h4>
+                                <p>
+                                    Inglaterra
+                                </p>
+                                </figcaption>
+                            </figure>
+                        </div>
                             </div>
                         </div>
                     </section>

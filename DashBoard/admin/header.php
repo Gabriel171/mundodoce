@@ -1,6 +1,12 @@
 <?php
     session_start();
 ?>
+<?php
+   if (!isset($_SESSION['usuario']) || !isset($_SESSION['roles']) ||  !(in_array("ADMIN", $_SESSION['roles']) || 
+   in_array("FUNC", $_SESSION['roles']))) {
+      header('Location: http://localhost/MundoDoceRemaster/index');
+    }
+ ?>
 
 <head>
     <meta charset="utf-8">

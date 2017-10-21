@@ -2,7 +2,7 @@
 
 	session_start();
 
-	include 'conecta1.php';
+	include 'C:\xampp\htdocs\MundoDoceRemaster\DashBoard\admin\pages\Conecta_CL.php';
 	
 
 	header('Content-Type: text/html; charset=utf-8');
@@ -27,7 +27,7 @@
 	mysqli_close($conecta); 
 	
 
-	echo "<script>alert('Mensagem enviada com êxito!'); location.href='contact.html'; </script>";	
+	echo "<script>alert('Mensagem enviada com êxito!'); location.href='contact'; </script>";	
 
 
 ?>

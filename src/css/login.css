@@ -92,9 +92,9 @@ body {
   position: relative;
   max-width: 460px;
   width: 100%;
-  margin: 0 auto 100px;
+  margin: 100px auto 100px;
 }
-.container.active .card:first-child {
+.container.active .other-card {
   background: #f2f2f2;
   margin: 0 15px;
 }
@@ -173,7 +173,7 @@ body {
   /* Footer */
   /* Alt Card */
 }
-.card:first-child {
+.other-card {
   background: #fafafa;
   height: 10px;
   border-radius: 5px 5px 0 0;
@@ -187,7 +187,7 @@ body {
   margin: 0 0 35px;
   padding: 10px 0 10px 50px;
   color: #ff528e;
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 600;
   text-transform: uppercase;
 }
