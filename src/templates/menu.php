@@ -10,10 +10,6 @@ Header Section Start
                 <span class="sr-only">Toggle navigation</span>
             </button>
             <img src="src/images/MundoDoce.png" class="img-responsive" height="90px" width="80px";>
-            
-            <!-- logo -->
-            
-            <!-- /logo -->
         </div>
         <!-- main menu -->
         <nav class="collapse navbar-collapse navbar-right" role="navigation">
@@ -49,6 +45,13 @@ Header Section Start
                         <?php
                             }
                         ?>
+
+                        <li class="cart">
+                            <a href="javascript:void(0);">
+                                <span class="ion-ios-cart"></span>
+                                <span class="badge"><?= sizeOf($_SESSION['cart']) ?></span>
+                            </a>
+                        </li>
 
                         <li class="logout">
                             <a href="javascript:void(0);">Sair</a>
