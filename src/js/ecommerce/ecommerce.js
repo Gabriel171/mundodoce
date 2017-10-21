@@ -22,7 +22,15 @@ form.list = function() {
 };
 
 form.getProductTemplate = function(product) {
-    return vsprintf("<div class='col-md-3 ecommerce--grid--product'><p>%s</p><p>%s</p><p>%s</p></div>", [product.name, product.price, product.state]);
+    return vsprintf("<div class='col-md-3 ecommerce--grid--product'>" +
+                         "<p>%s</p>" +
+                         "<p>%s</p>" +
+                         "<p>%s</p>" +
+                         "<button type='button' class='btn btn-default'>" +
+                            "<span class='ion-bag'></span>" +
+                         "</button>" +
+                    "</div>", 
+    [product.name, product.price, product.state]);
 }
 
 $(document).ready(function() {
