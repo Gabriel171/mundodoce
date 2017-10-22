@@ -12,3 +12,13 @@
    max-height: 218px;
    max-width: 268px;
 }
+.ecommerce--grid--product{
+    margin: 10px;
+    border: 1px solid rgb(255, 82, 142);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.ecommerce--grid--product--name {
+    margin-top: 8px;
+}

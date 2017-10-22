@@ -28,16 +28,18 @@ form.list = function() {
 };
 
 form.getProductTemplate = function(product, index) {
-    return vsprintf("<div class='col-md-3 ecommerce--grid--product' data-index='%s'>" +
-                         "<p>%s</p>" +
-                         "<p>%s</p>" +
-                         "<p>%s</p>" +
-                         "<img src= 'data:image/png;base64,%s' class=img-responsive>" +
-                         "<button type='button' class='btn btn-default add-to-cart' title='Adicionar ao carrinho'>" +
-                            "<span class='ion-bag'></span>" +
-                         "</button>" +
+    return vsprintf("<div class='col-md-3'>" +
+                        "<div class='ecommerce--grid--product' data-index='%s'>" +
+                            "<img src= 'data:image/png;base64,%s' class='img-responsive ecommerce--grid--product--image'>" +
+                            "<p class='ecommerce--grid--product--name'>%s</p>" +
+                            "<p class='ecommerce--grid--product--value'>Preço: R$ %s</p>" +
+                            "<p class='ecommerce--grid--product--state'>Estado: %s</p>" +
+                            "<button type='button' class='btn btn-default add-to-cart' title='Adicionar ao carrinho'>" +
+                                "<span class='ion-bag'></span>" +
+                            "</button>" +
+                        "</div>" +
                     "</div>", 
-    [index, product.name, product.price, product.state, product.image]);
+    [index,product.image, product.name, product.price.toFixed(2).replace('.', ','), product.state]);
 };
 
 form.addToCart = function (e) {

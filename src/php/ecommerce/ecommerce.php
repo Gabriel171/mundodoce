@@ -13,7 +13,7 @@
             $product = array(
                 'id' => $row[0],
                 'name' => $row[1],
-                'price' => $row[2],
+                'price' => (double) $row[2],
                 'state' => $row[3],
                 'image' => base64_encode($row[4]),
                 'quantity' => 1
