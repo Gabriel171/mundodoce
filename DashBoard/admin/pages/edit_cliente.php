@@ -50,7 +50,7 @@
     mysqli_select_db($conecta,"login") or
     print(mysqli_error());
     
-    $sql = "SELECT id_cliente, nome, cpf, rg, data_nascimento, sexo, telefone, email, senha, estado, dt_atualiza 
+    $sql = "SELECT id_cliente, nome, cpf, rg, data_nascimento, sexo, telefone, email, estado, dt_atualiza 
     FROM `cadastrocliente` WHERE id_cliente = ".$_GET['id_cliente'];     
     
     $result=mysqli_query($conecta,$sql);
@@ -92,9 +92,7 @@
                                         <input class='form-control' name='email' value='$consulta[email]'> 
                                         </div><br>  
 
-                                        <label>Senha:</label>
-                                        <input class='form-control' name='senha' value='$consulta[senha]'> 
-                                        </div><br>
+                                     
 
                                         <label>Estado:</label>
                                         <input class='form-control' name='estado' value='$consulta[estado]'> 

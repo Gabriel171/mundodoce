@@ -60,14 +60,14 @@
                                     <thead>
                                     <tr>
                                           
-                                            <th>nomecompleto</th>
-                                            <th>Cpf</th>
+                                            <th>Nome Completo</th>
+                                            <th>CPF</th>
                                          
-                                            <th>cep</th>
+                                            <th>CEP</th>
                                          
-                                            <th>telefone</th>
-                                            <th>email</th>
-                                            <th>dt_atualiza</th>
+                                            <th>Telefone</th>
+                                            <th>Email</th>
+                                            <th>Dt_Atualiza</th>
 
                                         </tr>
                                     </thead>

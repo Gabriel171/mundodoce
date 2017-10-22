@@ -59,14 +59,14 @@ include_once(dirname(__DIR__) . $path);
                                     <thead>
                                     <tr>
                                            
-                                            <th>nomeempresa</th>
+                                            <th>Nome da Empresa</th>
                                            
-                                            <th>cep</th>
+                                            <th>CEP</th>
                                            
-                                            <th>email</th>
-                                            <th>banco</th>
+                                            <th>Email</th>
+                                            <th>Banco</th>
                                            
-                                            <th>dt_atualiza</th>
+                                            <th>Dt_Atualiza</th>
 
                                         </tr>
                                     </thead>

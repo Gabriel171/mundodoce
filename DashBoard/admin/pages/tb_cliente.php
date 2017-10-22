@@ -61,9 +61,9 @@
                                     <thead>
                                         <tr>
                                             <th>Nome</th>
-                                            <th>Rg</th>
+                                            <th>CPF</th>
                                             <th>Email</th>
-                                            <th>Senha</th>
+                                          
                                             <th>Dt_atualiza</th>
                                         </tr>
                                     </thead>
@@ -96,12 +96,8 @@
                                                 <tr>
                                                     <td>$consulta[nome]</td>
                                                     <td>$consulta[cpf]</td>
-
                                                     <td>$consulta[email]</td>
-                                                    <td>$consulta[senha]</td>
-                                                    
                                                     <td>$consulta[dt_atualiza]</td>
-
                                                     $editButton
                                                 </tr>";
                                             }

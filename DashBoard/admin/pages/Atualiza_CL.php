@@ -13,7 +13,6 @@
     $data_nascimento = $_GET['data_nascimento'];
     $telefone = $_GET['telefone'];
     $email = $_GET['email'];
-    $senha = $_GET['senha'];
     $estado = $_GET['estado'];
     $id_cliente = $_GET['id_cliente'];
    
@@ -25,7 +24,6 @@
                    rg = '$rg',
                    data_nascimento = '$data_nascimento',
                   telefone  = '$telefone',
-                   email = '$email',
                    senha = '$senha',
                    estado = '$estado'
             WHERE id_cliente = '$id_cliente'";    

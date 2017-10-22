@@ -58,16 +58,16 @@ include_once(dirname(__DIR__) . $path);
                                     <thead>
                                     <tr>
                                             
-                                            <th>NomeProduto</th>
-                                            <th>CodigoProduto</th>
+                                            <th>Nome Produto</th>
+                                            <th>Codigo Produto</th>
                                            
                                             <th>Fornecedor</th>
                                            
                                             
-                                            <th>EstoqueMinimo</th>
-                                            <th>EstoqueMaximo</th>
+                                            <th>Estoque Minimo</th>
+                                            <th>Estoque Maximo</th>
                                            
-                                            <th>Dt_atualiza</th>
+                                            <th>Dt_Atualiza</th>
 
                                         </tr>
                                     </thead>
