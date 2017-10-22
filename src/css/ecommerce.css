@@ -5,3 +5,10 @@
 .ecommerce--grid--product, .cart--grid--row {
     margin-bottom: 25px;
 }
+
+.product-image {
+   height: 218px;
+   width: 268px;
+   max-height: 218px;
+   max-width: 268px;
+}

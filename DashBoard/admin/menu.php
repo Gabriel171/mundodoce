@@ -15,16 +15,9 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
+
                 <a class="navbar-brand" href="index.html">Mundo Doce</a>
             </div>
-            <!-- /.navbar-header -->
-
-           
-                    <!-- /.dropdown-user -->
-                </li>
-                <!-- /.dropdown -->
-            </ul>
-            <!-- /.navbar-top-links -->
 
             <div class="navbar-default sidebar" role="navigation">
                 <div class="sidebar-nav navbar-collapse">
@@ -33,24 +26,26 @@
                             <div class="input-group custom-search-form">
                                 <input type="text" class="form-control" placeholder="Search...">
                                 <span class="input-group-btn">
-                                <button class="btn btn-default" type="button">
-                                    <i class="fa fa-search"></i>
-                                  
-                                    <a href="php/user/logout.php">
-                                    <span class="input-group-btn">
-                                     <button class="btn btn-default" type="button">
-                                     <i class=""></i>Sair</a>
-                                   
-                                     </button>
-                                </button>
-                            </span>
+                                    <button class="btn btn-default" type="button">
+                                        <i class="fa fa-search"></i>
+                                    
+                                        <a href="php/user/logout.php" />
+                                        <span class="input-group-btn" />
+
+                                        <button class="btn btn-default" type="button">
+                                            <i class=""></i>Sair</a>
+                                        </button>
+                                    </button>
+                                </span>
                             </div>
-                            <!-- /input-group -->
                         </li>
-                            <!-- /.nav-second-level -->
-                        </li>
+                        
                         <li>
-                             <a href=""><i class="fa fa-edit fa-fw"></i>Cadastros<span class="fa arrow"></span></a>
+                            <a href="">
+                                <i class="fa fa-edit fa-fw"></i>
+                                Cadastros
+                                <span class="fa arrow"></span>
+                            </a>
                             <ul class="nav nav-second-level">
                                 <li>
                                     <a href="Cadastrocliente.php">Cadastro Cliente</a>

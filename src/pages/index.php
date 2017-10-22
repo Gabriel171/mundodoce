@@ -80,142 +80,10 @@
                 <div class="section-heading">
                     <h1 class="title wow fadeInDown" data-wow-delay=".3s">Um pouco do nosso trabalho</h1>
                     <p class="wow fadeInDown" data-wow-delay=".5s">
-                        Aqui estão alguns doces que vamos fazer de alguns países.
+                        <!-- Aqui estão alguns doces que vamos fazer de alguns países. -->
                     </p>
                 </div>
-                <div class="row">
-                        <div class="col-sm-4 col-xs-12">
-                            <div class="img-wrapper">
-                                <img src="images/portfolio/item1.jpg" class="img-responsive" alt="this is a title" >
-                                <div class="overlay">
-                                    <div class="buttons">
-                                        <a rel="gallery" class="fancybox" href="images/portfolio/item1.jpg"></a>
-                                        <a target="_blank" href="single-portfolio.html"></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <figcaption>
-                            <h4>
-                            <a href="#">
-                                Paris Brest
-                            </a>
-                            </h4>
-                            <p>
-                                França
-                            </p>
-                            </figcaption>
-                        </figure>
-                    </div>
-                        <div class="col-sm-4 col-xs-12">
-                            <div class="img-wrapper">
-                                <img src="images/portfolio/item2.jpg" class="img-responsive" alt="this is a title" >
-                                <div class="overlay">
-                                    <div class="buttons">
-                                        <a rel="gallery" class="fancybox" href="images/portfolio/item2.jpg"></a>
-                                        <a target="_blank" href="single-portfolio.html"></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <figcaption>
-                            <h4>
-                            <a href="#">
-                                Macaron
-                            </a>
-                            </h4>
-                            <p>
-                                França
-                            </p>
-                            </figcaption>
-                        </figure>
-                    </div>
-                    <div class="col-sm-4 col-xs-12">
-                            <div class="img-wrapper">
-                                <img src="images/portfolio/item3.jpg" class="img-responsive" alt="" >
-                                <div class="overlay">
-                                    <div class="buttons">
-                                        <a rel="gallery" class="fancybox" href="images/portfolio/item3.jpg"></a>
-                                        <a target="_blank" href="single-portfolio.html"></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <figcaption>
-                            <h4>
-                            <a href="#">
-                                Eclair
-                            </a>
-                            </h4>
-                            <p>
-                                França
-                            </p>
-                            </figcaption>
-                        </figure>
-                    </div>
-                    <div class="col-sm-4 col-xs-12">
-                            <div class="img-wrapper">
-                                <img src="images/portfolio/item4.jpg" class="img-responsive" alt="" >
-                                <div class="overlay">
-                                    <div class="buttons">
-                                        <a rel="gallery" class="fancybox" href="images/portfolio/item4.jpg"></a>
-                                        <a target="_blank" href="single-portfolio.html"></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <figcaption>
-                            <h4>
-                            <a href="#">
-                                Panna Cotta
-                            </a>
-                            </h4>
-                            <p>
-                                Itália
-                            </p>
-                            </figcaption>
-                        </figure>
-                    </div>
-                    <div class="col-sm-4 col-xs-12">
-                            <div class="img-wrapper">
-                                <img src="images/portfolio/item5.jpg" class="img-responsive" alt="" >
-                                <div class="overlay">
-                                    <div class="buttons">
-                                        <a rel="gallery" class="fancybox" href="images/portfolio/item5.jpg"></a>
-                                        <a target="_blank" href="single-portfolio.html"></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <figcaption>
-                            <h4>
-                            <a href="#">
-                                Tiramisu
-                            </a>
-                            </h4>
-                            <p>
-                                Itália
-                            </p>
-                            </figcaption>
-                        </figure>
-                    </div>
-                    <div class="col-sm-4 col-xs-12">
-                            <div class="img-wrapper">
-                                <img src="images/portfolio/item6.jpg" class="img-responsive" alt="" >
-                                <div class="overlay">
-                                    <div class="buttons">
-                                        <a rel="gallery" class="fancybox" href="images/portfolio/item6.jpg"></a>
-                                        <a target="_blank" href="single-portfolio.html"></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <figcaption>
-                            <h4>
-                            <a href="#">
-                                Maritozzo con la panna
-                            </a>
-                            </h4>
-                            <p>
-                                Itália
-                            </p>
-                            </figcaption>
-                        </figure>
-                    </div>
+                <div class="row candy-sample-grid">
                 </div>
             </div>
         </section> <!-- #works -->
@@ -246,5 +114,7 @@
             $path = "/templates/footer.php";
             include_once(dirname(__DIR__) . $path);
         ?>
+
+        <script src="app/js/images.js"></script>
     </body>
 </html>

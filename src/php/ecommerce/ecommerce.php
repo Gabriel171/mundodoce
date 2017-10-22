@@ -4,7 +4,7 @@
     $products = [];
 
     mysqli_select_db($dbconnection, "login") or print(mysqli_error());
-    $sql = "SELECT id_produto, nomeproduto, valorvenda, estado FROM cadastroproduto";
+    $sql = "SELECT id_produto, nomeproduto, valorvenda, estado, imagem FROM cadastroproduto";
 
     $result = mysqli_query($dbconnection, $sql);
 
@@ -14,7 +14,8 @@
                 'id' => $row[0],
                 'name' => $row[1],
                 'price' => $row[2],
-                'state' => $row[3]
+                'state' => $row[3],
+                'image' => base64_encode($row[4])
             );
 
             array_push($products, $product);

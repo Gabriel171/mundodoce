@@ -42,10 +42,18 @@
                 <!-- Products go here -->
                 <?php
                     $cart = $_SESSION['cart'];
-                    $totalPrice = 0;
 
-                    foreach ($cart as $product) {
-                        $totalPrice += $product -> price;
+                    if (sizeof($cart) < 1) {
+                ?>
+                
+                <span>Vaziooo</span>
+
+                <?php
+                    } else {
+                        $totalPrice = 0;
+
+                        foreach ($cart as $product) {
+                            $totalPrice += $product -> price;
 
                 ?>
                     <div class="col-md-12 cart--grid--row" data-id="<?= $product->id ?>">
@@ -57,12 +65,17 @@
                          </p>
                          <p>
                              <?= $product->state ?>
-                         </p>
+                        </p>
+                        <div>
+                            <img src= 'data:image/png;base64, <?= $product->image ?>' class="img-responsive product-image"> 
+                        </div>
+
                          <button type='button' class='btn btn-default add-to-cart' title='Adicionar ao carrinho'>
                             <span class='ion-trash-b'></span>
                          </button>
                     </div>
                 <?php
+                        }
                     }
                 ?>
             </div>

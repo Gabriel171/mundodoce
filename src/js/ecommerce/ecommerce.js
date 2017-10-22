@@ -32,11 +32,12 @@ form.getProductTemplate = function(product, index) {
                          "<p>%s</p>" +
                          "<p>%s</p>" +
                          "<p>%s</p>" +
+                         "<img src= 'data:image/png;base64,%s' class=img-responsive>" +
                          "<button type='button' class='btn btn-default add-to-cart' title='Adicionar ao carrinho'>" +
                             "<span class='ion-bag'></span>" +
                          "</button>" +
                     "</div>", 
-    [index, product.name, product.price, product.state]);
+    [index, product.name, product.price, product.state, product.image]);
 };
 
 form.addToCart = function (e) {

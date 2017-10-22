@@ -1088,3 +1088,16 @@ article {
   color: #fff;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
+
+.candy-sample {
+  height: 360px;
+  max-height: 360px;
+}
+
+.candy-sample .img-wrapper {
+  width: 360px;
+  max-width: 360px;
+  
+  height: 300px;
+  max-height: 300px;
+}

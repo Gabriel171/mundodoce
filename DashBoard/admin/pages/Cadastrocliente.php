@@ -34,7 +34,7 @@
                                         </div>
                                         <div class="form-group">
                                              <label>CPF</label> 
-                                             <input class="form-control" placeholder="Insira o seu CPF" type="text" name="cpf" maxlength="11" onblur="return verificarCPF(this.value)" id="cpf">
+                                             <input class="form-control" placeholder="Insira o seu CPF" type="text" name="cpf" maxlength="11" onblur="return verificarCPF(this.value)" id="cpf" required>
                                         </div>
                                             <script>
                                                                 function verificarCPF(c){
@@ -86,7 +86,7 @@
                                         </div>
                                         <div class="form-group">
                                             <label>Data de Nascimento</label>
-                                            <input type="text" class="form-control" placeholder="Insira a sua data de nascimento" id="data_nascimento" name="data_nascimento" required>
+                                            <input type="date" class="form-control" placeholder="Insira a sua data de nascimento" name="data_nascimento" required>
                                         </div>
                                         <div class="form-group">
                                             <label>Sexo</label>
