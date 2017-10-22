@@ -36,7 +36,7 @@
                                             <label>Nome do Produto</label>
                                              <input type="text" class="form-control" 
                                              placeholder="Inserir o nome do produto" id="nomeproduto" 
-                                             name="nomeproduto" value="111"required>
+                                             name="nomeproduto" value=""required>
                                         </div>
                                         <div class="form-group">
                                             <label>Imagem</label>
@@ -86,12 +86,12 @@
                                         <div class="form-group">
                                             <label>Valor de venda</label>
                                              <input type="text" class="form-control" 
-                                             placeholder="Inserir valor de venda" id="valorvenda" name="valorvenda" value="111"required>
+                                             placeholder="Inserir valor de venda" id="valorvenda" name="valorvenda" value=""required>
                                         </div>
                                         <div class="form-group">
                                             <label>Valor de custo</label>
                                              <input type="text" class="form-control" 
-                                             placeholder="Inserir valor de custo" id="valorcusto" name="valorcusto" value="111"required>
+                                             placeholder="Inserir valor de custo" id="valorcusto" name="valorcusto" value=""required>
                                         </div>
                                         <div class="form-group">
                                             <label>Origem do produto</label>
@@ -144,7 +144,7 @@
         include_once(dirname(__DIR__) . $path);
     ?>
 
-  
+
 
 </body>
 

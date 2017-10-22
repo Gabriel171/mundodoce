@@ -15,7 +15,8 @@
                 'name' => $row[1],
                 'price' => $row[2],
                 'state' => $row[3],
-                'image' => base64_encode($row[4])
+                'image' => base64_encode($row[4]),
+                'quantity' => 1
             );
 
             array_push($products, $product);

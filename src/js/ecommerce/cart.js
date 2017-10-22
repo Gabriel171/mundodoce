@@ -6,19 +6,21 @@ form.$grid = $('.cart--grid');
 form.removeFromCart = function (e) {
     var $target = $(e.target),
         $product = $target.is('button') ? $target.parent() : $target.parent().parent();
+        
+        $.ajax({
+            url: 'php/ecommerce/removeFromCart.php',
+            data: {productId: $product.data('id')},
+            type: 'post',
+            success: function(data) {
+                data = JSON.parse(data);
 
-    $product.hide();
-
-    $.ajax({
-        url: 'php/ecommerce/removeFromCart.php',
-        data: {productId: $product.data('id')},
-        type: 'post',
-        success: function(data) {
-            form.$cart.html(data);
-
-            if (data == 0) {
-                form.$grid.html('<span>Vazioo</span>')
-            }
+                form.$cart.html(data.total);
+                
+                if (data.current == 0) {
+                    $product.hide();
+                } else {
+                    $product.find('.quantity').html(data.current);
+                }
         },
         error: function(error) {
           console.error(error);

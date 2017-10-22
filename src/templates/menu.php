@@ -1,3 +1,12 @@
+<?php
+    $cart = $_SESSION['cart'];
+    $total= 0;
+
+    foreach($cart as $product){
+        $total = $total + $product->quantity;
+    }
+?>
+
 <!--
 ==================================================
 Header Section Start
@@ -52,7 +61,7 @@ Header Section Start
                         <li class="cart">
                             <a href="cart">
                                 <span class="ion-ios-cart"></span>
-                                <span class="badge"><?= sizeOf($_SESSION['cart']) ?></span>
+                                <span class="badge"><?= $total ?></span>
                             </a>
                         </li>
 

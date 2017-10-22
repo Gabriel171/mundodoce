@@ -53,7 +53,8 @@
                         $totalPrice = 0;
 
                         foreach ($cart as $product) {
-                            $totalPrice += $product -> price;
+
+
 
                 ?>
                     <div class="col-md-12 cart--grid--row" data-id="<?= $product->id ?>">
@@ -66,10 +67,12 @@
                          <p>
                              <?= $product->state ?>
                         </p>
+                        <p class="quantity">
+                            <?= $product->quantity ?>
+                        </p>
                         <div>
                             <img src= 'data:image/png;base64, <?= $product->image ?>' class="img-responsive product-image"> 
                         </div>
-
                          <button type='button' class='btn btn-default add-to-cart' title='Adicionar ao carrinho'>
                             <span class='ion-trash-b'></span>
                          </button>
