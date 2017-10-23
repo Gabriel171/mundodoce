@@ -3,6 +3,7 @@ var form = {};
 form.products = [];
 form.$grid = $('.ecommerce--grid');
 form.$cart = $('.main-menu .cart .badge');
+form.$search = $('.ecommerce--search input');
 
 form.list = function() {
     $.ajax({
@@ -61,6 +62,26 @@ form.addToCart = function (e) {
           console.error(error);
         }
     });
+};
+
+form.search = function(e) {
+    var search = e.target.value.toLowerCase(),
+        $products = $('.ecommerce--grid--product');;
+    
+    if (search) {
+        $products.each(function() {
+            $element = $(this);
+            if ($element.find('.ecommerce--grid--product--name').text().toLowerCase() == search) {
+                $element.parent().show();
+            } else {
+                $element.parent().hide();
+            }
+        });
+    } else {
+        $products.each(function() {
+            $(this).parent().show();
+        });
+    }
 }
 
 $(document).ready(function() {
@@ -68,4 +89,5 @@ $(document).ready(function() {
 });
 
 $(document)
-.on('click', '.add-to-cart', form.addToCart);
+.on('click', '.add-to-cart', form.addToCart)
+.on('keyup', '.ecommerce--search input', form.search);
