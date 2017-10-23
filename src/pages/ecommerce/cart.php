@@ -95,7 +95,7 @@
                                 <td></td>
                                 <td></td>
                                 <td>
-                                    <strong class="sale-price">R$ <?= $salePrice ?></strong>
+                                    <strong class="sale-price">R$ <?= number_format($salePrice, 2, ',', ' ') ?></strong>
                                 </td>
                             </tr>
                         </tfoot>
