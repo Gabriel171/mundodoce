@@ -33,20 +33,20 @@
      
         if ($user->type == 'ADMIN') {
             if (in_array('ADMIN', $roles) || in_array('FUNC', $roles)) {
-                returnOk($consulta['nomecompleto'], $roles);
+                returnOk($consulta['id_funcionario'], $roles);
             } else {
                 returnError('User is not an admin', '401');
             }
        } else {
-           returnOk($consulta['nomecompleto'], $roles);
+           returnOk($consulta['id_funcionario'], $roles);
        }
     } else {
         returnError('User not found', '403');
     }
 
-    function returnOk($name, $roles) {
+    function returnOk($id, $roles) {
         session_start();
-        $_SESSION['usuario'] = $name;
+        $_SESSION['usuario'] = $id;
         $_SESSION['roles'] = $roles;
         echo json_encode($_SESSION['usuario']);
     }

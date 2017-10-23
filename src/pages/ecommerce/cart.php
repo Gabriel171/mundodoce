@@ -100,6 +100,8 @@
                             </tr>
                         </tfoot>
                     </table>
+
+                    <button type="button" class="btn btn-primary pull-right btn-lg checkout">Comprar</button>
                 </section>
             <?php
             }

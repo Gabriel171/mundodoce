@@ -32,7 +32,23 @@ form.removeFromCart = function (e) {
           console.error(error);
         }
     });
+};
+
+form.checkout = function() {
+    $.ajax({
+        url: 'php/ecommerce/checkout.php',
+        type: 'post',
+        success: function(data) {
+            form.$cart.html('0');
+            form.table.html("<h2 class='text-center'>Compra efetuada com sucesso!</h2>");
+
+    },
+    error: function(error) {
+      console.error(error);
+    }
+});
 }
 
 $(document)
-.on('click', '.add-to-cart', form.removeFromCart);
+.on('click', '.add-to-cart', form.removeFromCart)
+.on('click', '.cart-table .checkout', form.checkout);
