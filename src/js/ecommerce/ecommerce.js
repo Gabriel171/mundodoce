@@ -44,7 +44,7 @@ form.getProductTemplate = function(product, index) {
 
 form.addToCart = function (e) {
     var $target = $(e.target),
-        $product = $target.is('button') ? $target.parent() : $target.parent().parent(),
+        $product = $target.closest('.ecommerce--grid--product'),
         product = {};
 
     product = form.products[$product.data('index')];

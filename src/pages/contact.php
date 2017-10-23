@@ -51,7 +51,7 @@
                                 Mande uma mensagem para nós.
                             </p>
                             <div class="contact-form">
-                                <form action="Envia_Formulario1.php" method="Post">
+                                <form action="php/Envia_Formulario1.php" method="Post">
 
                              <label for="name"></label>
 
