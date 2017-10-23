@@ -21,6 +21,7 @@ form.removeFromCart = function (e) {
                     form.table.html("<h2 class='text-center'>Seu carrinho está vázio!</h2>");
                 } else if (data.updatedQuantity == 0) {
                     $product.hide();
+                    form.$salePrice.html('R$' + data.updatedSalePrice.toFixed(2).replace('.', ','));
                 } else {
                     $product.find('.quantity').html(data.updatedQuantity);
                     $product.find('.totalValue').html('R$ ' + data.updatedTotalValue.toFixed(2).replace('.', ','));
