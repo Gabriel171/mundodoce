@@ -10,9 +10,10 @@
 
     mysqli_select_db($dbconnection, "login") or print(mysqli_error());
 
-    $statement = mysqli_prepare($dbconnection, "SELECT s.id, s.value, s.created_date, i.product_id, i.quantity, i.value ".
+    $statement = mysqli_prepare($dbconnection, "SELECT s.id, s.value, s.created_date, p.nomeproduto, i.quantity, i.value, p.valorvenda ".
                                                "FROM sale s ".
                                                "INNER JOIN sale_item i on i.sale_id = s.id ".
+                                               "INNER JOIN cadastroproduto p on p.id_produto = i.product_id ".
                                                "WHERE s.user_id = ?");
     
         mysqli_stmt_bind_param($statement, "i", $userId);
@@ -41,9 +42,10 @@
             }
 
             $item = new stdClass();
-            $item->productId = $row[3];
-            $item->productQuantity = $row[4];
-            $item->productTotalValue = $row[5];
+            $item->productName = $row[3];
+            $item->productQuantity = (int) $row[4];
+            $item->productTotalValue = (double) $row[5];
+            $item->productValue = (double) $row[6];
             
             array_push($currentOrder->items, $item);
         }

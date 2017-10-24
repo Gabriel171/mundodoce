@@ -37,80 +37,73 @@
             </div>
         </section>
 
-        <section class="container cart">
-            <!-- Products go here -->
-            <?php
-                $cart = $_SESSION['cart'];
-                $salePrice = 0;
-                if (sizeof($cart) < 1) {
-            ?>
-            
-            <h2 class="text-center">Seu carrinho está vázio!</h2>
-
-            <?php
-                } else {
-            ?>
-
-                <section class="cart-table">
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th>Produto</th>
-                                <th>Quantidade</th>
-                                <th>Valor Unitário</th>
-                                <th>Valor Total</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                    <?php
-                        foreach ($cart as $product) {
-                            $salePrice = $salePrice + ($product->price * $product->quantity); 
-                    ?>
-                            <tr data-id="<?= $product->id ?>">
-                                <td>
-                                    <?= $product->name ?>
-                                </td>
-                                <td>
-                                    <span class="quantity"><?= $product->quantity ?></span>
-                                    <button type='button' class='btn btn-default add-to-cart' title='Adicionar ao carrinho'>
-                                        <span class='ion-trash-b'></span>
-                                    </button>
-                                </td>
-                                <td>
-                                    R$ <?= number_format($product->price, 2, ',', ' ') ?>
-                                </td>
-                                <td class="totalValue">
-                                    R$ <?= number_format($product->quantity * $product->price, 2, ',', ' ') ?>
-                                </td>
-                            </tr>
-                        <?php
-                        }
-                        ?>
-                        </tbody>
-                        <tfoot>
-                            <tr>
-                                <td>
-                                    <span>Total</span>
-                                </td>
-                                <td></td>
-                                <td></td>
-                                <td>
-                                    <strong class="sale-price">R$ <?= number_format($salePrice, 2, ',', ' ') ?></strong>
-                                </td>
-                            </tr>
-                        </tfoot>
-                    </table>
-
-                    <button type="button" class="btn btn-primary pull-right btn-lg checkout">Comprar</button>
-                </section>
-            <?php
-            }
-            ?>
+        <section class="container my-orders">
+            <section class="order-table">
+                
+            </section>
         </section>
+
         <?php
             $path = "/templates/footer.php";
             include_once(dirname(dirname(__DIR__)) . $path);
         ?>
+
+        <script id="order-template" type="text/x-handlebars-template">
+            {{#if isEmpty}}
+                <h2 class="text-center">Nenhum pedido realizado!</h2>
+            {{/if}}
+
+            {{#each order}}
+                <div class="panel panel-primary order-table--item">
+                    <div class="panel-heading">
+                        Pedido #{{saleId}}
+                    </div>
+
+                    <div class="panel-body">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Produto</th>
+                                    <th>Quantidade</th>
+                                    <th>Valor Unitário</th>
+                                    <th>Valor Total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {{#each items}}
+                                    <tr>
+                                        <td>
+                                            <span>{{productName}}</span>
+                                        </td>
+                                        <td>
+                                            <span>{{productQuantity}}</span>
+                                        </td>
+                                        <td>
+                                            <span>{{numberFormat productValue}}</span>
+                                        </td>
+                                        <td>
+                                        <span>{{numberFormat productTotalValue}}</span>
+                                        </td>
+                                    </tr>
+                                {{/each}}
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td>
+                                        <span>Total</span>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>
+                                        <strong>{{numberFormat saleValue}}</strong>
+                                    </td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+            {{/each}}
+        </script>
 
         <script src="app/js/ecommerce/myOrders.js"></script>
     </body>

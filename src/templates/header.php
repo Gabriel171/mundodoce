@@ -57,6 +57,8 @@
 <script src="vendors/js/slider.js"></script>
 <script src="vendors/js/jquery.fancybox.js"></script>
 
+<script src="vendors/js/handlebars-v4.0.11.js"></script>
+
 <!-- template main js -->
 <script src="vendors/js/main.js"></script>
 
