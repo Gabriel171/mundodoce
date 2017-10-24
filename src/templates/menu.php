@@ -55,6 +55,10 @@ Header Section Start
                         ?>
 
                         <li>
+                            <a href="my-orders">Meus Pedidos</a>
+                        </li>
+
+                        <li>
                             <a href="ecommerce">Loja</a>
                         </li>
 

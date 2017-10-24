@@ -26,3 +26,4 @@ RewriteRule admin$ src/pages/admin.php
 
 RewriteRule ecommerce$ src/pages/ecommerce/home.php
 RewriteRule cart$ src/pages/ecommerce/cart.php
+RewriteRule my-orders$ src/pages/ecommerce/my-orders.php
