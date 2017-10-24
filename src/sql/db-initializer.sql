@@ -163,6 +163,32 @@ INSERT INTO `cadastroproduto` VALUES (23,'Doce1',111,'111','111',111,111,111,111
 UNLOCK TABLES;
 
 --
+-- Table structure for table `login_tcc`
+--
+
+DROP TABLE IF EXISTS `login_tcc`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `login_tcc` (
+  `id_usuario` int(11) NOT NULL AUTO_INCREMENT,
+  `usuario` varchar(50) COLLATE utf8_bin NOT NULL,
+  `senha` varchar(50) COLLATE utf8_bin NOT NULL,
+  `dt_atualiza` date NOT NULL,
+  PRIMARY KEY (`id_usuario`)
+) ENGINE=InnoDB AUTO_INCREMENT=105 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `login_tcc`
+--
+
+LOCK TABLES `login_tcc` WRITE;
+/*!40000 ALTER TABLE `login_tcc` DISABLE KEYS */;
+INSERT INTO `login_tcc` VALUES (34,'jennifer','jennyfer2011','2017-08-30'),(35,'gustavo@email.com','81dc9bdb52d04dc20036dbd8313ed055','2017-08-30'),(36,'KEKKEEKKKEEKE','1111111111111111111111','2017-09-04'),(37,'joojo','joojo01','2017-09-04'),(38,'joojo','jooj','2017-09-04'),(39,'joojo','jooj01','2017-09-04'),(40,'joojo','jooooooooooooooooooooooj','2017-09-04'),(41,'joojo','jjj','2017-09-04'),(42,'joojo','ss','2017-09-04'),(43,'ddd','dddd','2017-09-05'),(44,'w','w','2017-09-10'),(45,'w','w','2017-09-10'),(46,'coxinha','pastel','2017-09-10'),(47,'w','w','2017-09-10'),(48,'w','w','2017-09-10'),(49,'w','w','2017-09-10'),(50,'r','4b43b0aee35624cd95b910189b3dc231','2017-09-10'),(51,'jjjj','9f6e6800cfae7749eb6c486619254b9c','2017-09-16'),(52,'yyyyyt','e358efa489f58062f10dd7316b65649e','2017-09-16'),(53,'´´uuu','2fb1c5cf58867b5bbc9a1b145a86f3a0','2017-09-16'),(54,'','d41d8cd98f00b204e9800998ecf8427e','2017-09-17'),(55,'','d41d8cd98f00b204e9800998ecf8427e','2017-09-17'),(56,'sadassd','fa1b865d9280d4a488afa30fd60216e7','2017-09-17'),(57,'d','8277e0910d750195b448797616e091ad','2017-09-17'),(58,'','d41d8cd98f00b204e9800998ecf8427e','2017-09-17'),(59,'sd','6226f7cbe59e99a90b5cef6f94f966fd','2017-09-17'),(60,'cccc','41fcba09f2bdcdf315ba4119dc7978dd','2017-09-17'),(61,'','d41d8cd98f00b204e9800998ecf8427e','2017-09-17'),(62,'','d41d8cd98f00b204e9800998ecf8427e','2017-09-17'),(63,'','d41d8cd98f00b204e9800998ecf8427e','2017-09-17'),(64,'','d41d8cd98f00b204e9800998ecf8427e','2017-09-17'),(65,'','d41d8cd98f00b204e9800998ecf8427e','2017-09-17'),(66,'','d41d8cd98f00b204e9800998ecf8427e','2017-09-17'),(67,'','d41d8cd98f00b204e9800998ecf8427e','2017-09-17'),(68,'asd','7815696ecbf1c96e6894b779456d330e','2017-09-17'),(69,'qaz','4eae18cf9e54a0f62b44176d074cbe2f','2017-09-17'),(70,'zxc','5fa72358f0b4fb4f2c5d7de8c9a41846','2017-09-17'),(71,'zxc','5fa72358f0b4fb4f2c5d7de8c9a41846','2017-09-17'),(72,'zxc','5fa72358f0b4fb4f2c5d7de8c9a41846','2017-09-17'),(73,'','d41d8cd98f00b204e9800998ecf8427e','2017-09-17'),(74,'zxc','5fa72358f0b4fb4f2c5d7de8c9a41846','2017-09-17'),(75,'','d41d8cd98f00b204e9800998ecf8427e','2017-09-17'),(76,'','d41d8cd98f00b204e9800998ecf8427e','2017-09-17'),(77,'zxcz','ac0881ac3355c807bfb2a197d9c77535','2017-09-17'),(78,'','d41d8cd98f00b204e9800998ecf8427e','2017-09-17'),(79,'xcc','5fa72358f0b4fb4f2c5d7de8c9a41846','2017-09-17'),(80,'asd','7815696ecbf1c96e6894b779456d330e','2017-09-17'),(81,'asdads','7815696ecbf1c96e6894b779456d330e','2017-09-17'),(82,'zxcxc','d55133f97783eddd874038a957648ac0','2017-09-17'),(83,'asdads','5858d286d1ebfa8a13a0676fd4ec0a89','2017-09-17'),(84,'asd','7815696ecbf1c96e6894b779456d330e','2017-09-17'),(85,'','d41d8cd98f00b204e9800998ecf8427e','2017-09-17'),(86,'','d41d8cd98f00b204e9800998ecf8427e','2017-09-17'),(87,'','d41d8cd98f00b204e9800998ecf8427e','2017-09-17'),(88,'asd','7815696ecbf1c96e6894b779456d330e','2017-09-17'),(89,'asd','7815696ecbf1c96e6894b779456d330e','2017-09-17'),(90,'asdsda','7815696ecbf1c96e6894b779456d330e','2017-09-17'),(91,'asd','7815696ecbf1c96e6894b779456d330e','2017-09-17'),(92,'asd','7815696ecbf1c96e6894b779456d330e','2017-09-17'),(93,'ASD','855923dc59cf6d1e2eaf8f488f177d75','2017-09-17'),(94,'ddddddd','d340c5e973c682f96d59a024085bd202','2017-09-17'),(95,'xxx','fb0e22c79ac75679e9881e6ba183b354','2017-09-17'),(96,'sdsd','cc2bd8f09bb88b5dd20f9b432631b8ca','2017-09-17'),(97,'sad','7815696ecbf1c96e6894b779456d330e','2017-09-17'),(98,'jju','41deabc1920cc67ba9bae5b278633390','2017-09-17'),(99,'q','7694f4a66316e53c8cdd9d9954bd611d','2017-09-17'),(100,'ex','54d54a126a783bc9cba8c06137136943','2017-09-24'),(101,'dfhf','a842d30704f61b94c20e66ecc7531c35','2017-09-24'),(102,'geg','ff9e747b03c22f2be9090b78402130e1','2017-09-24'),(103,'q','7694f4a66316e53c8cdd9d9954bd611d','2017-09-24'),(104,'qadm','7694f4a66316e53c8cdd9d9954bd611d','2017-09-24');
+/*!40000 ALTER TABLE `login_tcc` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `sale`
 --
 
@@ -178,7 +204,7 @@ CREATE TABLE `sale` (
   KEY `INDEX_SALE_ID` (`id`),
   KEY `FK_SALE_USER_ID` (`user_id`),
   CONSTRAINT `FK_SALE_USER_ID` FOREIGN KEY (`user_id`) REFERENCES `cadastrofuncionario` (`id_funcionario`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -187,6 +213,7 @@ CREATE TABLE `sale` (
 
 LOCK TABLES `sale` WRITE;
 /*!40000 ALTER TABLE `sale` DISABLE KEYS */;
+INSERT INTO `sale` VALUES (18,57,16.56,'2017-10-24 00:12:27');
 /*!40000 ALTER TABLE `sale` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -198,7 +225,7 @@ DROP TABLE IF EXISTS `sale_item`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `sale_item` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `product_id` int(11) NOT NULL,
   `quantity` bigint(20) NOT NULL,
   `value` decimal(19,2) NOT NULL,
@@ -209,7 +236,7 @@ CREATE TABLE `sale_item` (
   KEY `FK_SALE_ITEM_PRODUCT` (`product_id`),
   CONSTRAINT `FK_SALE_ITEM_PRODUCT` FOREIGN KEY (`product_id`) REFERENCES `cadastroproduto` (`id_produto`),
   CONSTRAINT `FK_SALE_ITEM_SALE` FOREIGN KEY (`sale_id`) REFERENCES `sale` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -218,6 +245,7 @@ CREATE TABLE `sale_item` (
 
 LOCK TABLES `sale_item` WRITE;
 /*!40000 ALTER TABLE `sale_item` DISABLE KEYS */;
+INSERT INTO `sale_item` VALUES (1,23,1,9.56,18),(2,24,1,2.00,18),(3,25,1,5.00,18);
 /*!40000 ALTER TABLE `sale_item` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -257,4 +285,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-10-22 21:56:10
+-- Dump completed on 2017-10-24  0:13:08
