@@ -310,7 +310,7 @@
                                             <input type="email" class="form-control" placeholder="nome@email.com" id="email" name="email" required>
                                         </div>
                                         <div class="form-group">
-                                            <label> Numero do Banco </label>
+                                            <label> Número do Banco </label>
                                            <input type="text" class="form-control" placeholder="Insira o seu banco" id="banco" name="banco" required>
                                         </div>
                                         <div class="form-group">

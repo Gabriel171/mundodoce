@@ -43,7 +43,7 @@
                                             <input type="file" name="imagem" class="form-control" id="imagem" />
                                         </div>
                                         <div class="form-group">
-                                            <label>Codigo do Produto</label>
+                                            <label>Código do Produto</label>
                                              <input type="text" class="form-control"
                                              placeholder="Inserir o código do produto" id="codigoproduto" 
                                              name="codigoproduto" value="111"required>
@@ -69,12 +69,12 @@
                                               placeholder="Inserir peso" id="peso" name="peso" value="111"required>
                                         </div>
                                         <div class="form-group">
-                                            <label>Estoque Minimo</label>
+                                            <label>Estoque Mínimo</label>
                                              <input type="text" class="form-control"
                                               placeholder="Inserir estoque mininmo" id="estoqueminimo" name="estoqueminimo" value="111"required>
                                         </div>
                                         <div class="form-group">
-                                            <label>Estoque Maximo</label>
+                                            <label>Estoque Máximo</label>
                                              <input type="text" class="form-control"
                                               placeholder="Inserir estoque maximo" id="estoquemaximo" name="estoquemaximo" value="111"required>
                                         </div>
@@ -84,17 +84,17 @@
                                              placeholder="Inserir codigo GTIN/EAN" id="codigogtin" name="codigogtin" value="111"required>
                                         </div>
                                         <div class="form-group">
-                                            <label>Valor de venda</label>
+                                            <label>Valor de Venda</label>
                                              <input type="text" class="form-control" 
                                              placeholder="Inserir valor de venda" id="valorvenda" name="valorvenda" value=""required>
                                         </div>
                                         <div class="form-group">
-                                            <label>Valor de custo</label>
+                                            <label>Valor de Custo</label>
                                              <input type="text" class="form-control" 
                                              placeholder="Inserir valor de custo" id="valorcusto" name="valorcusto" value=""required>
                                         </div>
                                         <div class="form-group">
-                                            <label>Origem do produto</label>
+                                            <label>Origem do Produto</label>
                                              <input type="text" class="form-control" 
                                              placeholder="Inserir origem do produto" id="origemproduto" name="origemproduto" value="111"required>
                                         </div>

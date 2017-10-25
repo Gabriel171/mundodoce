@@ -13,5 +13,5 @@
 	mysqli_close($dbconnection);
 
 	// Precisa de um JSON válido para o retorno
-	echo $sql;
+	echo '{}';
 ?>

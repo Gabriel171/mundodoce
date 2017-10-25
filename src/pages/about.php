@@ -48,8 +48,7 @@
                         <img src="images/about/about-company.jpg" alt="" class="img-responsive">
                     </div>
                     <div class="col-md-6">
-                        <div class="block">
-                            <h3 class="subtitle wow fadeInUp" data-wow-delay=".3s" data-wow-duration="500ms">Empresa Mundo Doce</h3>
+                        
                             <p  class="wow fadeInUp" data-wow-delay=".5s" data-wow-duration="500ms">
                                 O Mundo dos Doces tem o compromisso com a privacidade e a segurança de seus clientes durante todo o processo de navegação e compra pelo site. Os dados cadastrais dos clientes não são vendidos, trocados ou divulgados para terceiros, exceto quando essas informações são necessárias para o processo de entrega, para cobrança, ou para participação em promoções solicitadas pelos clientes. Visamos ser a maior e melhor empresa na distribuição de produtos de um sabor inigualável, fazendo a diferença e conquistando o paladar dos consumidores. Desenvolvendo, disponibilizando e aplicando modernos e pioneiros processos na área dos doces com o objetivo de oferecer os melhores produtos, com a melhor qualidade, visando satisfazer as necessidades e expectativas de nossos clientes, contribuindo para o constante aperfeiçoamento e crescimento do nosso mercado nacional.
 
@@ -93,7 +92,11 @@
                         </h2>
                         <p>
                            -Bom Relacionamento com clientes e funcionários.
+                        </p>
+                        <p>
                            -Respeito a todos (Funcionários, Clientes, Fornecedores).
+                        </p>
+                        <p>
                            -Integridade e honestidade a todos(Funcionários, Clientes, Fornecedores).
                         </p>
                     </div>

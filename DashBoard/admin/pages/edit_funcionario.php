@@ -24,7 +24,7 @@ include_once(dirname(__DIR__) . $path);
 <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">Edição de cadastro de funcionario</h1>
+                    <h1 class="page-header">Edição de Cadastro de Funcionário</h1>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
@@ -32,7 +32,7 @@ include_once(dirname(__DIR__) . $path);
                 <div class='col-lg-12'>
                     <div class='panel panel-default'>
                         <div class='panel-heading'>
-                            Fornecedor
+                            Funcionário
                         </div>
                         <!-- /.panel-heading -->
                         <div class='panel-body'>
@@ -48,7 +48,7 @@ include_once(dirname(__DIR__) . $path);
     mysqli_select_db($conecta,"login") or
     print(mysqli_error());
     
-    $sql = "SELECT id_funcionario, nomecompleto, cpf, cep, telefone, dt_atualiza 
+    $sql = "SELECT id_funcionario, nomecompleto, cpf, cep, telefone, email, dt_atualiza 
         FROM cadastrofuncionario WHERE id_funcionario = ".$_GET['id_funcionario'];
     
     $result=mysqli_query($conecta,$sql);
@@ -85,7 +85,9 @@ include_once(dirname(__DIR__) . $path);
                                         </div><br>
 
 
-                                      
+                                        <label>E-mail:</label>
+                                        <input class='form-control' name='email' value='$consulta[email]' >
+                                        </div><br>
                                        
 
                                         <input type='submit' class='btn btn-success' value='Salvar'>

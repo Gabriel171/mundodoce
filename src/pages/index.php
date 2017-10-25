@@ -57,9 +57,7 @@
                                 Olá, somos especialistas em doces do mundo inteiro, aqui irá encontrar doces de outros países, por exemplo na França, Itália, Ingaterra 
                                 e entres outros.
                             </p>
-                            <p>
-                                Não fazemos venda online, você pode vim retirar em nossa loja com a localização que esta em contato
-                            </p>
+                          
                         </div>
                         
                     </div>
@@ -103,7 +101,7 @@
                     <div class="col-md-12">
                         <div class="block">
                             
-                            <a href="contact" class="btn btn-default btn-contact wow fadeInDown" data-wow-delay=".7s" data-wow-duration="500ms">ENTRE EM CONTATO CONOSCO</a>
+                            <a href="contact" class="btn btn-default btn-contact wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">ENTRE EM CONTATO CONOSCO</a>
                         </div>
                     </div>
                     

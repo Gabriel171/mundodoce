@@ -31,7 +31,7 @@
  
 	
    echo $sql;
-	//echo "<script>alert('$nome inserido com êxito!'); location.href='Cadastrocliente.php'; </script>";	
+	echo "<script>alert('$nome inserido com êxito!'); location.href='Cadastrocliente.php'; </script>";	
 
 
 ?>

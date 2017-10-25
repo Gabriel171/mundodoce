@@ -31,6 +31,7 @@ login.createUser = function(e) {
     type: 'post',
     success: function() {
       $('.createUserForm__submit__text').text('Cadastrar');
+      window.location.href = 'index';
     },
     error: function(error) {
       console.error(error.responseText);

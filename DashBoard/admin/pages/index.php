@@ -70,19 +70,17 @@
                     <ul class="nav" id="side-menu">
                         <li class="sidebar-search">
                             <div class="input-group custom-search-form">
-                                <input type="text" class="form-control" placeholder="Search...">
-                                <span class="input-group-btn">
-                                <button class="btn btn-default" type="button">
-                                    <i class="fa fa-search"></i>
-                                    <a href="php/user/logout.php">
-                                    <span class="input-group-btn">
-                                     <button class="btn btn-default" type="button">
-                                     <i class=""></i>Sair</a>
-                                     </button>
-                                </button>
-                            </span>
+                                <a href="index">
+                                    <button class="btn btn-default">
+                                            Home
+                                    </button>
+                                </a>
+                                <a href="php/user/logout.php">
+                                    <button class="btn btn-default" type="button">
+                                            Logout
+                                    </button>
+                                </a>
                             </div>
-                            <!-- /input-group -->
                         </li>
                             <!-- /.nav-second-level -->
                         </li>

@@ -115,7 +115,7 @@
                         <div class="col-md-12">
                             <div class="block">
                                
-                                <a href="contact.html" class="btn btn-default btn-contact wow fadeInDown" data-wow-delay=".7s" data-wow-duration="300ms">ENTRE EM CONTATO CONOSCO</a>
+                                <a href="contact.html" class="btn btn-default btn-contact wow fadeInDown" data-wow-delay=".3s" data-wow-duration="300ms">ENTRE EM CONTATO CONOSCO</a>
                             </div>
                         </div>
                         

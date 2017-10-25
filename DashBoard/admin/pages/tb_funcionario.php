@@ -94,7 +94,7 @@
                                                         && isset($_SESSION['roles']) 
                                                         && in_array("ADMIN", $_SESSION['roles']) ) {
                                                             $editButton = 
-                                                            "<td><a href='edit_funcionario.php?id_cliente=$consulta[id_funcionario]'>
+                                                            "<td><a href='edit_funcionario.php?id_funcionario=$consulta[id_funcionario]'>
                                                             <button type='button' class='btn btn-info btn-circle'><i class='fa fa-pencil' title='Editar 
                                                             registro $consulta[id_funcionario]' ></i></button></a></td>";
                                                         }
